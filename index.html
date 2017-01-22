@@ -4,39 +4,40 @@
 <meta charset="utf-8">
 <title>HTML Academy: Техномарт</title>
 <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/normalize.css">
 <!-- чтобы унифицировать стили браузеров по умолчанию. -->
 </head>
 
 <body>
 <header class="main-header">
-  <nav class="head-navigation">
+  <nav class="head-navigation row">
     <div class="container">
       <ul>
-        <li><a>ТЕХНОМАРТ</a></li>
-        <li>
+        <li class="col s-3"><a>ТЕХНОМАРТ</a></li>
+        <li class="col s-2">
           <form class="search" action="index.html" method="post">
             <label></label>
             <input type="text" name="search" value="">
           </form>
         </li>
-        <li><a href="#">Оформить заказ</a></li>
-        <li><a class="basket icon-basket" href="#">Корзина: 0</a></li>
-        <li><a class="bookmark icon-bookmark" href="#">Закладки: 0</a></li>
+        <li class="col s-2"><a href="#">Оформить заказ</a></li>
+        <li class="col s-2"><a class="basket icon-basket" href="#">Корзина: 0</a></li>
+        <li class="col s-2"><a class="bookmark icon-bookmark" href="#">Закладки: 0</a></li>
       </ul>
     </div>
   </nav>
   <section class="site-info">
     <div class="container">
-      <section class="block-info"> Интернет-магазин <br>
+      <section class="block-about"> Интернет-магазин <br>
         строительных материалов <br>
         и инструментов для ремонта </section>
-      <section class="block-info">
+      <section class="block-contacts">
         <p class="phone">+7 (812) 555-05-55</p>
         <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         </p>
       </section>
-      <section class="block-info"> <a class="btn registration" href="#">Регистрация</a> <a class="btn enter icon-login" href="#">Войти</a> </section>
+      <section class="block-user"> <a class="btn registration" href="#">Регистрация</a> <a class="btn enter icon-login" href="#">Войти</a> </section>
     </div>
   </section>
   <nav class="site-navigation">
@@ -87,7 +88,7 @@
       <div class="catalog-item">
         <div class="flag flag-new">новинка</div>
         <div class="actions"> <a href="#" class="buy">Купить</a> <a href="#" class="bookmark">В закладки</a> </div>
-        <div class="image"><img width="218" height="168" src="img/bosh9000.jpg"></div>
+        <div class="image"><img width="" height="" src="img/bosh9000.jpg"></div>
         <div class="title">Перфоратор BOSCH BFG 9000</div>
         <div class="discount">32 500 Р.</div>
         <div class="price">25 500 Р.</div>
