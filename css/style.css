@@ -1,0 +1,80 @@
+body {
+	min-width: 960px;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 18px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	color: black;
+	background: white;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.row {
+	padding: 0 10px;
+	background: #ccc;
+}
+.col {
+	float: left;
+	padding: 0px 10px;
+	box-sizing: border-box;
+}
+.s-1 {
+	width: 8.33%;
+}
+.s-2 {
+	width: 16.66%;
+}
+.s-3 {
+	width: 25%;
+}
+.s-4 {
+	width: 33.33%;
+}
+.s-5 {
+	width: 41.66%;
+}
+.s-6 {
+	width: 50%;
+}
+.s-7 {
+	width: 58.33%;
+}
+.s-8 {
+	width: 66.66%;
+}
+.s-9 {
+	width: 75%;
+}
+.s-10 {
+	width: 83.11%;
+}
+.s-11 {
+	width: 91.66%;
+}
+.s-12 {
+	width: 100%;
+}
+.row:after {
+	content: "";
+	display: table;
+	width: 100%;
+}
+.to-right {
+	float: right;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.col.single {
+	float: none;
+	margin: 0 auto;
+}
