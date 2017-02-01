@@ -12,102 +12,99 @@
 
 <body>
   <header class="main-header">
-    <nav class="head-navigation">
-      <div class="container">
-        <ul class="row text-center">
-          <li class="s-3">
-            <a>ТЕХНОМАРТ </a>
+    <div class="main-header-layout  container">
+      <div class="flex-left s-6">
+        <div class="logo">
+          <a>ТЕХНОМАРТ </a>
+        </div>
+        <form class="search icon-search" action="index.html" method="post">
+          <label for="search"></label>
+          <input type="text" name="search" id="search" value="">
+        </form>
+      </div>
+      <div class="flex-right s-6">
+        <div class="user-block">
+          <a class="basket icon-basket " href="#">Корзина: 0 </a>
+          <a class="bookmark icon-bookmark " href="#">Закладки: 0 </a>
+        </div>
+        <div class="checkout">
+          <a href="#">Оформить заказ </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="site-info">
+    <div class="site-info-layout container">
+      <div class="row">
+        <section class="block-about s-4">Интернет-магазин
+          <br> строительных материалов
+          <br> и инструментов для ремонта
+        </section>
+        <section class="block-contacts s-4">
+          <p class="phone">+7 (812) 555-05-55</p>
+          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+        </section>
+        <section class="block-user s-4 text-center">
+          <a class="btn user icon-user" href="#">Равшан Джамшутович </a>
+          <div class="row text-left">
+            <a class="" href="#">Мои заказы</a>
+            <a class="" href="#">Личный кабинет</a>
+          </div>
+        </section>
+      </div>
+
+      <nav class="site-navigation">
+        <ul class="col single">
+          <li>
+            <a class="navigation-item">Главная </a>
           </li>
-          <li class="s-3">
-            <form class="search icon-search" action="index.html" method="post">
-              <label for="search"></label>
-              <input type="text" name="search" id="search" value="">
-            </form>
+          <li>
+            <a class="navigation-item" href="#">Компания </a>
           </li>
-          <li class="s-2">
-            <a href="#">Оформить заказ </a>
+          <li>
+            <a class="navigation-item" href="catalog.html">Каталог </a>
           </li>
-          <li class="s-2">
-            <a class="basket icon-basket" href="#">Корзина: 0 </a>
+          <li>
+            <a class="navigation-item" href="#">Новости </a>
           </li>
-          <li class="s-2">
-            <a class="bookmark icon-bookmark" href="#">Закладки: 0 </a>
+          <li>
+            <a class="navigation-item" href="#">Спецпредложения </a>
+          </li>
+          <li>
+            <a class="navigation-item" href="#">Доставка </a>
+          </li>
+          <li>
+            <a class="navigation-item" href="#">Контакты </a>
           </li>
         </ul>
-      </div>
-    </nav>
-    <section class="site-info">
-      <div class="container">
-        <div class="row">
-          <section class="block-about s-4">Интернет-магазин
-            <br> строительных материалов
-            <br> и инструментов для ремонта
-          </section>
-          <section class="block-contacts s-4">
-            <p class="phone text-center">+7 (812) 555-05-55</p>
-            <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-              <br>
-            </p>
-          </section>
-          <section class="block-user s-4 text-center">
-            <a class="btn user icon-user" href="#">Равшан Джамшутович </a>
-            <div class="row text-left">
-              <a class="" href="#">Мои заказы</a>
-              <a class="" href="#">Личный кабинет</a>
-            </div>
-          </section>
-        </div>
-        <nav class="site-navigation">
-          <ul class="col single">
-            <li>
-              <a class="navigation-item" href="index.html">Главная </a>
-            </li>
-            <li>
-              <a class="navigation-item" href="#">Компания </a>
-            </li>
-            <li>
-              <a class="navigation-item" href="catalog.html">Каталог </a>
-            </li>
-            <li>
-              <a class="navigation-item" href="#">Новости </a>
-            </li>
-            <li>
-              <a class="navigation-item" href="#">Спецпредложения </a>
-            </li>
-            <li>
-              <a class="navigation-item" href="#">Доставка </a>
-            </li>
-            <li>
-              <a class="navigation-item" href="#">Контакты </a>
-            </li>
-          </ul>
-        </nav>
-    </section>
-
+      </nav>
+    </div>
+  </section>
   </header>
   <main class="main-catalog">
     <div class="container">
       <nav class="breadcrumbs">
         <ul class="row s-5">
-          <a href="index.html">
-            <li></li>
-          </a>
-          <a href="catalog.html">
-            <li>Каталог</li>
-          </a>
-          <a href="">
-            <li>Инструмент</li>
-          </a>
-          <a href="">
-            <li>Перфораторы</li>
-          </a>
+          <li>
+            <a href="index.html">дом </a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог </a>
+          </li>
+          <li>
+            <a href="">Инструмент </a>
+          </li>
+          <li>
+            <a href="">Перфораторы </a>
+          </li>
         </ul>
       </nav>
       <h2 class="catalog-caption row">ПЕРФОРАТОРЫ </h2>
       <div class="row">
-        <aside class="left s-3">
-          <div class="caption">ФИЛЬТР : </div>
+        <div class="left s-3">
           <form action="form.php" method="GET">
+            <div class="caption">ФИЛЬТР : </div>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -159,13 +156,13 @@
             </div>
           </div>
           <a class="btn" href="#">ПОКАЗАТЬ</a>
-        </aside>
-        <aside class="right s-9">
+        </div>
+        <div class="right s-9">
           <div class="catalog-content-right">
             <div class="catalog-sorting">
               <ul class="sorting-param row">
                 <li>
-                  <p>СОРТИРОВКА </p>
+                  <span>СОРТИРОВКА </span>
                 </li>
                 <li class="">
                   <a href="#">ПО ЦЕНЕ</a>
@@ -283,15 +280,16 @@
                 <div class="price">15 500 Р.</div>
               </div>
             </div>
-            <div class="paginator row s-4">
-              <a class="current" href="#1">1</a>
-              <a href="#2">2</a>
-              <a href="#3">3</a>
-              <a class="next" href="#next">СЛЕДУЮЩАЯ</a>
-            </div>
           </div>
-
-        </aside>
+          <ul class="paginator row s-4">
+            <li>
+              <a class="current" href="#1">1</a>
+              <a href="2">2</a>
+              <a href="3">3</a>
+              <a class="next" href="next">СЛЕДУЮЩАЯ</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="annotation row">
         <div class="container">
