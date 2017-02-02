@@ -105,6 +105,7 @@
         <div class="left s-3">
           <form action="form.php" method="GET">
             <div class="caption">ФИЛЬТР : </div>
+            <div>ЦЕНА:</div>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -122,48 +123,46 @@
                 </label>
               </div>
             </div>
+            <h3 class="catalog-content-title">ПРОИЗВОДИТЕЛИ:</h3>
+            <div class="factory-item-incatalog">
+              <input type="checkbox" name="factory" id="factory-field-1" checked>
+              <label for="factory-field-1">BOSCH</label>
+            </div>
+            <div class="factory-item-incatalog">
+              <input class="f-item" type="checkbox" name="factory" id="factory-field-2">
+              <label for="factory-field-2">ИНТЕРСКОЛ</label>
+            </div>
+            <div class="factory-item-incatalog">
+              <input type="checkbox" name="factory" id="factory-field-3" checked>
+              <label for="factory-field-3">MAKITA</label>
+            </div>
+            <div class="factory-item-incatalog">
+              <input type="checkbox" name="factory" id="factory-field-4">
+              <label for="factory-field-4">DEWALT</label>
+            </div>
+            <div class="factory-item-incatalog">
+              <input type="checkbox" name="factory" id="factory-field-5">
+              <label for="factory-field-5">HITACHI</label>
+            </div>
+            <div class="filter-block">
+              <h3 class="catalog-content-title">ПИТАНИЕ</h3>
+              <div class="power-item">
+                <input type="radio" name="product" id="battery" checked>
+                <label for="battery">АККУМУЛЯТОРНЫЕ</label>
+              </div>
+              <div class="power-item">
+                <input type="radio" name="product" id="wire">
+                <label for="wire">СЕТЕВЫЕ</label>
+              </div>
+            </div>
+            <button type="submit">ПОКАЗАТЬ</button>
           </form>
-          <h3 class="catalog-content-title">ПРОИЗВОДИТЕЛИ:</h3>
-          <div class="factory-item-incatalog">
-            <input type="checkbox" name="factory" id="factory-field-1" checked>
-            <label for="factory-field-1">BOSCH</label>
-          </div>
-          <div class="factory-item-incatalog">
-            <input class="f-item" type="checkbox" name="factory" id="factory-field-2">
-            <label for="factory-field-2">ИНТЕРСКОЛ</label>
-          </div>
-          <div class="factory-item-incatalog">
-            <input type="checkbox" name="factory" id="factory-field-3" checked>
-            <label for="factory-field-3">MAKITA</label>
-          </div>
-          <div class="factory-item-incatalog">
-            <input type="checkbox" name="factory" id="factory-field-4">
-            <label for="factory-field-4">DEWALT</label>
-          </div>
-          <div class="factory-item-incatalog">
-            <input type="checkbox" name="factory" id="factory-field-5">
-            <label for="factory-field-5">HITACHI</label>
-          </div>
-          <div class="filter-block">
-            <h3 class="catalog-content-title">ПИТАНИЕ</h3>
-            <div class="power-item">
-              <input type="radio" name="product" id="battery" checked>
-              <label for="battery">АККУМУЛЯТОРНЫЕ</label>
-            </div>
-            <div class="power-item">
-              <input type="radio" name="product" id="wire">
-              <label for="wire">СЕТЕВЫЕ</label>
-            </div>
-          </div>
-          <a class="btn" href="#">ПОКАЗАТЬ</a>
         </div>
         <div class="right s-9">
           <div class="catalog-content-right">
-            <div class="catalog-sorting">
+            <div class="catalog-sorting row">
+              <span>СОРТИРОВКА: </span>
               <ul class="sorting-param row">
-                <li>
-                  <span>СОРТИРОВКА </span>
-                </li>
                 <li class="">
                   <a href="#">ПО ЦЕНЕ</a>
                 </li>
@@ -209,8 +208,6 @@
                 <div class="discount">22 500 Р.</div>
                 <div class="price">15 500 Р.</div>
               </div>
-            </div>
-            <div class="catalog-items row">
               <div class="catalog-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -244,8 +241,6 @@
                 <div class="discount">22 500 Р.</div>
                 <div class="price">15 500 Р.</div>
               </div>
-            </div>
-            <div class="catalog-items row">
               <div class="catalog-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -300,13 +295,13 @@
     </div>
   </main>
   <footer>
-    <section class="footer-up">
+    <section class="footer-up row">
       <div class="container">
-        <ul class="footer-navigation-site row">
-          <li class="s-3 text-center">
+        <div class="row">
+          <div class="s-3 text-center">
             <a>ТЕХНОМАРТ </a>
-          </li>
-          <div class="row s-7">
+          </div>
+          <ul class="footer-navigation-site flex-right">
             <li class="navigation-item">
               <a href="#">Компания </a>
             </li>
@@ -322,21 +317,22 @@
             <li class="navigation-item">
               <a href="#">Контакты </a>
             </li>
-          </div>
-
-        </ul>
-        <ul class="footer-navigation-info row">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8+7 (812) 555-05-55</p>
-          <li class="navigation-item">
-            <a href="#">Техника </a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Инструмент </a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Спецпредложения </a>
-          </li>
-        </ul>
+          </ul>
+        </div>
+        <div class="row">
+          <div>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8+7 (812) 555-05-55</div>
+          <ul class="footer-navigation-info flex-right">
+            <li class="navigation-item">
+              <a href="#">Техника </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#">Инструмент </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#">Спецпредложения </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="footer-down">
