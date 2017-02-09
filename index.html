@@ -18,14 +18,13 @@
           <a>ТЕХНОМАРТ </a>
         </div>
         <form class="search icon-search" action="index.html" method="post">
-          <label for="search"></label>
           <input type="text" name="search" id="search" value="">
         </form>
       </div>
       <div class="flex-right s-6">
         <div class="user-block">
-          <a class="basket icon-basket " href="#">Корзина: 0 </a>
           <a class="bookmark icon-bookmark " href="#">Закладки: 0 </a>
+          <a class="basket icon-basket " href="#">Корзина: 0 </a>
         </div>
         <div class="checkout">
           <a href="#">Оформить заказ </a>
@@ -36,19 +35,21 @@
   <section class="site-info">
     <div class="site-info-layout container">
       <div class="row">
-        <section class="block-about s-4">Интернет-магазин
+        <div class="block-about">Интернет-магазин
           <br> строительных материалов
           <br> и инструментов для ремонта
-        </section>
-        <section class="block-contacts s-4">
-          <p class="phone">+7 (812) 555-05-55</p>
+        </div>
+        <div class="block-contacts">
+          <p class="phone">
+            <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+          </p>
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-        </section>
-        <section class="block-user s-4 text-right">
-          <a class="btn enter icon-login" href="#">Войти </a>
-          <a class="btn registration" href="#">Регистрация </a>
-        </section>
+        </div>
+        <div class="block-user">
+          <a class="enter btn icon-login" href="#">Войти </a>
+          <a class="registration btn" href="#">Регистрация </a>
+        </div>
       </div>
 
       <nav class="site-navigation">
@@ -83,15 +84,15 @@
   <main>
     <section class="categories-block container">
       <div class="row-first">
-        <div class="categories-item ">
+        <div class="categories-item materials">
           <div class="name-category">Материалы </div>
           <a class="btn" href="#">на любой вкус </a>
         </div>
-        <div class="categories-item ">
+        <div class="categories-item instrument">
           <div class="name-category">Инструмент </div>
           <a class="btn" href="#">на все случаи </a>
         </div>
-        <div class="categories-item ">
+        <div class="categories-item technics">
           <div class="name-category">Техника </div>
           <a class="btn" href="#">для стройки </a>
         </div>
@@ -104,11 +105,11 @@
           <a class="btn" href="#">открыть каталог </a>
         </div>
         <div>
-          <div class="categories-item s-4">
+          <div class="categories-item discount">
             <div class="name-category">Скидка 50% </div>
             <a class="btn" href="#">на 350 товаров </a>
           </div>
-          <div class="categories-item s-4">
+          <div class="categories-item delivery">
             <div class="name-category">Доставка </div>
             <a class="btn" href="#">бесплатно </a>
           </div>
@@ -116,7 +117,7 @@
       </div>
     </section>
     <div class="container">
-      <div class="block-caption row">
+      <div class="block-caption">
         <p class="block-title">ПОПУЛЯРНЫЕ ТОВАРЫ:</p>
         <a class="btn" href="#">все популярные товары </a>
       </div>
@@ -129,10 +130,11 @@
           <a href="#" class="buy">Купить </a>
           <a href="#" class="bookmark">В закладки </a>
         </div>
-        <div class="image"><img width="220" height="143" src="img/bosh9000.jpg"></div>
-        <div class="title">Перфоратор BOSCH BFG 9000</div>
-        <div class="discount">32 500 Р.</div>
-        <div class="price">25 500 Р.</div>
+        <div class="image"><img width="218" height="143" src="img/bosh9000.jpg"></div>
+        <div class="title">Перфоратор BOSCH
+          <br>BFG 9000</div>
+        <div class="discount">32500 Р.</div>
+        <div class="price">25500 Р.</div>
       </div>
       <div class="catalog-item">
         <div class="actions">
@@ -140,9 +142,10 @@
           <a href="#" class="bookmark">В закладки </a>
         </div>
         <div class="image"><img width="220" height="143" src="img/bosh3000.jpg"></div>
-        <div class="title">Перфоратор BOSCH BFG 3000</div>
-        <div class="discount">22 500 Р.</div>
-        <div class="price">15 500 Р.</div>
+        <div class="title">Перфоратор BOSCH
+          <br>BFG 3000</div>
+        <div class="discount">22500 Р.</div>
+        <div class="price">15500 Р.</div>
       </div>
       <div class="catalog-item">
         <div class="actions">
@@ -150,9 +153,10 @@
           <a href="#" class="bookmark">В закладки </a>
         </div>
         <div class="image"><img width="220" height="143" src="img/bosh6000.jpg"></div>
-        <div class="title">Перфоратор BOSCH BFG 6000</div>
-        <div class="discount">30 500 Р.</div>
-        <div class="price">25 500 Р.</div>
+        <div class="title">Перфоратор BOSCH
+          <br>BFG 6000</div>
+        <div class="discount">30500 Р.</div>
+        <div class="price">25500 Р.</div>
       </div>
       <div class="catalog-item">
         <div class="flag flag-new">новинка</div>
@@ -161,14 +165,15 @@
           <a href="#" class="bookmark">В закладки </a>
         </div>
         <div class="image"><img width="220" height="143" src="img/bosh2000.jpg"></div>
-        <div class="title">Перфоратор BOSCH BFG 2000</div>
+        <div class="title">Перфоратор BOSCH
+          <br>BFG 2000</div>
         <div class="discount"></div>
-        <div class="price">12 500 Р.</div>
+        <div class="price">12500 Р.</div>
       </div>
 
     </section>
     <div class="container">
-      <div class="block-caption row">
+      <div class="block-caption">
         <p class="block-title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</p>
         <a class="btn" href="#">все производители </a>
       </div>
@@ -225,7 +230,7 @@
               <a class="btn" href="#credit">Кредит </a>
             </li>
           </ul>
-          <div class="service-block-delivery text-left s-8">
+          <div class="service-block-delivery text-left">
             <h2 class="service-block-delivery-title">ДОСТАВКА</h2>
             <p>Мы с удовольствием доставим ваш товар прямо
               <br> к вашему подъезду совершенно бесплатно!
@@ -237,9 +242,10 @@
     </section>
     <section class="index-content">
       <div class="container row">
-        <div class="index-content-left s-7">
+        <div class="index-content-left">
           <h2 class="index-content-title">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастробайтерах.</p>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+            <br> строительства не оставит равнодушными любителей сэкономить на гастробайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки Росси!
             <br> Техномарт работает со многими транспортными компаниями</p>
           <ul class="transport-companies">
@@ -249,7 +255,7 @@
           </ul>
           <a class="btn" href="#">ПОДРОБНЕЕ О КОПАНИИ </a>
         </div>
-        <div class="index-content-right s-4">
+        <div class="index-content-right">
           <h2 class="index-content-title">КОНТАКТЫ</h2>
           <p>Вы можете забрать товар сами,
             <br> заехав в наш офис:</p>
@@ -262,31 +268,35 @@
   <footer>
     <section class="footer-up row">
       <div class="container">
-        <div class="row">
-          <div class="s-3 text-center">
+        <div class="row-footer-first">
+          <div class="logo-footer">
             <a>ТЕХНОМАРТ </a>
           </div>
           <ul class="footer-navigation-site flex-right">
-            <li class="navigation-item">
+            <li>
               <a href="#">Компания </a>
             </li>
-            <li class="navigation-item">
+            <li>
               <a href="#">Новости </a>
             </li>
-            <li class="navigation-item">
+            <li>
               <a href="#catalog.html">Каталог </a>
             </li>
-            <li class="navigation-item">
+            <li>
               <a href="#">Доставка </a>
             </li>
-            <li class="navigation-item">
+            <li>
               <a href="#">Контакты </a>
             </li>
           </ul>
         </div>
-        <div class="row">
-          <div>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8+7 (812) 555-05-55</div>
+        <div class="row-footer-second">
+          <div>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            <br>+7 (812) 555-05-55</div>
           <ul class="footer-navigation-info flex-right">
+            <li class="navigation-item">
+              <a href="#">Материалы </a>
+            </li>
             <li class="navigation-item">
               <a href="#">Техника </a>
             </li>
