@@ -337,7 +337,7 @@ input:focus {
   left: 5%;
   width: 30px;
   height: 25px;
-  background: red url("../img/icon-phone.png") no-repeat;
+  background: url("../img/icon-phone.png") no-repeat;
 }
 
 p.phone {
@@ -377,7 +377,6 @@ a.enter {
 }
 
 a.registration {
-  position: relative;
   padding: 11.5px 25px;
   font-size: 21px;
   line-height: 18px;
@@ -387,8 +386,16 @@ a.registration {
   margin-right: 0px;
 }
 
+a.enter::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-login.png") no-repeat;
+}
 
-/*
 .block-user a:hover {
   color: #ee3643;
   background: #ffffff;
@@ -397,7 +404,6 @@ a.registration {
 .block-user a:active {
   color: #bcbcbc;
 }
-*/
 
 .user {
   position: relative;
@@ -411,6 +417,26 @@ a.registration {
   text-transform: none;
   color: #000000;
   background-color: #ffffff;
+}
+
+.user::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 25px;
+  height: 20px;
+  background: url(../img/icon-user_.png)no-repeat;
+}
+
+.user::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 270px;
+  width: 25px;
+  height: 20px;
+  background: url(../img/icon-logout_.png)no-repeat;
 }
 
 .extra {
@@ -514,25 +540,27 @@ a.registration {
 /*catalog-page*/
 
 .breadcrumbs {
-  display: flex;
+  width: 100%;
   padding-top: 18px;
 }
 
 .breadcrumbs ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: top;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-.breadcrumbs li {
-  position: relative;
-  display: inline;
-  padding-right: 40px;
-  vertical-align: top;
-}
 
+/*
 .breadcrumbs li::after {
   content: "";
   position: absolute;
@@ -542,14 +570,35 @@ a.registration {
   height: 2px;
   background-color: #c1c6ce;
 }
+*/
 
 .breadcrumbs a {
+  display: block;
+  padding: 0px 0px;
   color: #000;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .breadcrumbs .current::after {
   display: none;
+}
+
+
+/*breadcrumbs-home*/
+
+.breadcrumbs ul li:nth-child(1) {
+  position: relative;
+}
+
+.breadcrumbs ul li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  background: url(../img/icon-home.png)no-repeat;
 }
 
 .catalog .catalog-caption {
@@ -574,7 +623,7 @@ a.registration {
 /*forma*/
 
 .caption {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   font-size: 13px;
   line-height: 18px;
   background: #f7f3ec;
@@ -586,14 +635,13 @@ a.registration {
 .price-title {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
-  font-size: 4.85px;
+  font-size: 17px;
   font-weight: 700;
-  line-height: 8.558px;
-  transform: scale(3.505, 3.505);
+  line-height: 30px;
 }
 
 .range-filter {
-  margin-top: 20px;
+  margin-top: 15px;
   width: 220px;
 }
 
@@ -672,26 +720,110 @@ a.registration {
 /*форма выше*/
 
 .catalog-content-title {
-  margin-top: 50px;
+  padding-top: 15px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
+  border-top: 1px solid #e5e5e5;
 }
 
 .factory-item-incatalog {
-  min-height: 55px;
-  padding-top: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  padding-top: 15px;
   background-color: #ffffff;
   box-sizing: border-box;
 }
 
-.filter-block {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 220px;
-  min-height: 265px;
-  border-top: 1px dotted #666666;
-  border-bottom: 1px dotted #666666;
-  box-sizing: border-box;
+.factory-item-incatalog:nth-child(6) {
+  margin-bottom: 15px;
 }
+
+.power-item {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  padding-top: 15px;
+}
+
+form .btn {
+  margin-top: 75px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+
+/*фильтры*/
+
+.filter-block {
+  margin-top: 28px;
+  display: block;
+  width: 220px;
+}
+
+
+/* Скрываем реальный чекбокс */
+
+.checkbox,
+.radio {
+  display: none;
+}
+
+.checkbox-custom,
+.radio-custom {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.checkbox-custom {
+  background: transparent url("../img/icon-check-off.png") no-repeat;
+}
+
+.radio-custom {
+  background: transparent url("../img/icon-circle.png") no-repeat;
+}
+
+.checkbox-custom,
+.radio-custom,
+.label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: transparent url("../img/icon-check-on.png") no-repeat;
+}
+
+.radio:checked + .radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: transparent url("../img/icon-circle-dot.png") no-repeat;
+}
+
+
+/**/
 
 
 /*правая сторона страницы каталога*/
@@ -710,7 +842,6 @@ a.registration {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
-  border: 1px dotted black;
 }
 
 .catalog-sorting ul {
@@ -718,7 +849,6 @@ a.registration {
   justify-content: space-between;
   width: 380px;
   list-style: none;
-  border: 1px dotted black;
 }
 
 .catalog-sorting li {
@@ -740,27 +870,28 @@ a.registration {
 .paginator {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: 95%;
   margin: 22px 0px;
   padding: 8px;
+}
+
+.paginator ul {
+  font-size: 0px;
+  text-decoration: none;
+}
+
+.paginator li {
+  display: inline-block;
+  vertical-align: top;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
-  white-space: nowrap;
-  background: #ecf0f1;
-  /*убрать*/
 }
 
 .paginator a {
-  display: inline-block;
-  min-width: 20px;
-  height: 40px;
-  padding: 0 10px;
-  line-height: 40px;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 13px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  display: block;
+  padding: 10px 12px;
+  margin-right: 13px;
   text-decoration: none;
   color: black;
   background: #ffffff;
@@ -769,7 +900,7 @@ a.registration {
 }
 
 .paginator .next {
-  width: 120px;
+  width: 118px;
   text-align: center;
   vertical-align: middle;
 }
