@@ -128,13 +128,14 @@ form .search {
 
 input {
   background-color: transparent;
-  padding-left: 10px;
+  padding-left: 40px;
   border: none;
   position: relative;
   width: 220px;
+  height: 42px;
   background-size: 80px;
   background-repeat: no-repeat;
-  background-position: 12px 0px;
+  background-position: 15px 10px;
   background-image: url(../img/icon-search.png);
   opacity: 0.7;
 }
@@ -144,6 +145,7 @@ input:hover {
 }
 
 input:focus {
+  position: absolute;
   outline: none;
   color: #000;
   background-color: #ffffff;
@@ -155,7 +157,9 @@ input:focus + label {
 }
 
 input:focus {
+  position: relative;
   background-size: 17px;
+  background-position: 15px 11px;
   background-image: url(../img/icon-search-red.png);
 }
 
@@ -298,6 +302,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+  padding-bottom: 64px;
   background-color: #f1f5f7;
 }
 
@@ -309,6 +314,10 @@ input:focus {
   line-height: 23px;
   text-align: left;
   color: #ee3643;
+}
+
+.row-about {
+  margin-bottom: 40px;
 }
 
 .block-contacts {
@@ -345,7 +354,8 @@ p.phone {
 }
 
 .block-contacts .address {
-  padding-top: 3px;
+  padding: 0px;
+  margin-top: 3px;
   color: #32425c;
   font-size: 14px;
   font-weight: 400;
@@ -355,7 +365,6 @@ p.phone {
 
 div.block-user {
   display: flex;
-  justify-content: flex-end;
   align-self: flex-start;
   flex-wrap: wrap;
   width: 300px;
@@ -368,7 +377,7 @@ a.enter {
   padding: 11.5px 25px 11.5px;
   margin-left: 20px;
   font-size: 21px;
-  line-height: 18px;
+  line-height: 21px;
   text-transform: none;
   color: #000000;
   background: #ffffff;
@@ -379,7 +388,7 @@ a.enter {
 a.registration {
   padding: 11.5px 25px;
   font-size: 21px;
-  line-height: 18px;
+  line-height: 21px;
   text-transform: none;
   color: #000000;
   background: #ffffff;
@@ -407,11 +416,10 @@ a.enter::before {
 
 .user {
   position: relative;
-  margin: 0px 0px;
-  padding: 11.5px 65px 11.5px 50px;
-  height: 22px;
+  padding: 10px 65px 11.5px 50px;
+  margin-bottom: 5px;
   font-size: 21px;
-  line-height: 18px;
+  line-height: 21px;
   text-align: center;
   text-decoration: none;
   text-transform: none;
@@ -440,27 +448,24 @@ a.enter::before {
 }
 
 .extra {
-  padding-top: 5px;
-  padding-left: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 245px;
 }
 
 .extra ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
+  font-size: 0px;
 }
 
 .extra li {
-  display: inline-block;
-  vertical-align: top;
   font-size: 16px;
   line-height: 18px;
 }
 
 .extra a {
-  padding: 5px 23px;
   color: #000;
+  background-color: none;
+  text-transform: none;
 }
 
 
@@ -479,7 +484,6 @@ a.enter::before {
 .site-navigation {
   display: flex;
   margin-top: 0px;
-  margin-bottom: 64px;
   width: 100%;
   min-height: 0px;
   background-color: #32425c;
@@ -521,8 +525,8 @@ a.enter::before {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 56px;
-  padding-bottom: 45px;
+  padding-top: 56px;
+  margin-bottom: 45px;
 }
 
 .row-first {
@@ -541,7 +545,7 @@ a.enter::before {
 
 .breadcrumbs {
   width: 100%;
-  padding-top: 18px;
+  margin-bottom: 23px;
 }
 
 .breadcrumbs ul {
@@ -606,8 +610,8 @@ a.enter::before {
   padding-left: 30px;
   padding-top: 27px;
   padding-bottom: 27px;
-  margin-top: 23px;
   margin-bottom: 23px;
+  width: 100%;
   text-align: center;
   font-size: 30px;
   line-height: 30px;
@@ -622,13 +626,20 @@ a.enter::before {
 
 /*forma*/
 
+.left {
+  width: 220px;
+}
+
+.right {
+  width: 700px;
+}
+
 .caption {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 13px;
   background: #f7f3ec;
-  width: 200px;
-  padding: 10px 0px 10px 20px;
+  padding: 12px 20px;
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
@@ -637,23 +648,26 @@ a.enter::before {
   color: #000000;
   font-size: 17px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 17px;
+  margin-bottom: 18px;
 }
 
 .range-filter {
-  margin-top: 15px;
   width: 220px;
+  margin-bottom: 22px;
 }
 
 .range-controls {
   position: relative;
+  font-size: 17px;
+  line-height: 18px;
   height: 41px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  margin-bottom: 10px;
   border-radius: 5px;
   background: #f1f1f1;
+  margin-bottom: 8px;
 }
 
 .range-controls .scale {
@@ -662,7 +676,7 @@ a.enter::before {
 }
 
 .range-controls .bar {
-  width: 100%;
+  width: 220px;
   height: 2px;
   background: #00ca74;
 }
@@ -714,13 +728,16 @@ a.enter::before {
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 
 /*форма выше*/
 
 .catalog-content-title {
-  padding-top: 15px;
+  margin-top: 40px;
+  margin-bottom: 13px;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -728,30 +745,35 @@ a.enter::before {
   border-top: 1px solid #e5e5e5;
 }
 
+.catalog-content-title-two {
+  margin-top: 42px;
+  margin-bottom: 15px;
+}
+
 .factory-item-incatalog {
   font-size: 15px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
-  padding-top: 15px;
+  margin-bottom: 15px;
   background-color: #ffffff;
   box-sizing: border-box;
 }
 
 .factory-item-incatalog:nth-child(6) {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .power-item {
   font-size: 14px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
-  padding-top: 15px;
+  margin-bottom: 15px;
 }
 
 form .btn {
-  margin-top: 75px;
   padding-left: 40px;
   padding-right: 40px;
+  margin-right: 0px;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -764,9 +786,9 @@ form .btn {
 /*фильтры*/
 
 .filter-block {
-  margin-top: 28px;
   display: block;
   width: 220px;
+  margin-bottom: 75px;
 }
 
 
@@ -859,9 +881,59 @@ form .btn {
 
 .catalog-sorting a {
   display: block;
-  padding: 10px 10px;
+  padding: 0px 10px;
+  padding-top: 10px;
   color: #000;
   text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.catalog-sorting .current-param {
+  color: #ee3643;
+}
+
+.triangle {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 13px 16px 13px 29px;
+}
+
+.triangle-up {
+  padding: 0px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #c6c2bd;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #c6c2bd;
+}
+
+.triangle-up:hover {
+  border-bottom: 10px solid black;
+}
+
+.triangle-down:hover {
+  border-top: 10px solid black;
+}
+
+.triangle-up:active {
+  border-bottom: 10px solid red;
+}
+
+.triangle-down:active {
+  border-top: 10px solid red;
+}
+
+.catalog-content-right {
+  margin-bottom: 33px;
 }
 
 
@@ -870,9 +942,6 @@ form .btn {
 .paginator {
   display: flex;
   justify-content: flex-start;
-  width: 95%;
-  margin: 22px 0px;
-  padding: 8px;
 }
 
 .paginator ul {
@@ -890,8 +959,8 @@ form .btn {
 
 .paginator a {
   display: block;
-  padding: 10px 12px;
-  margin-right: 13px;
+  padding: 10px 15px;
+  margin-right: 9px;
   text-decoration: none;
   color: black;
   background: #ffffff;
@@ -900,7 +969,7 @@ form .btn {
 }
 
 .paginator .next {
-  width: 118px;
+  width: 110px;
   text-align: center;
   vertical-align: middle;
 }
@@ -918,32 +987,43 @@ form .btn {
   border: 1px solid #ee3643;
 }
 
+div .catalog {
+  padding-top: 18px;
+  padding-bottom: 60px;
+}
+
 
 /*кнопки назад-вперед выше*/
 
 .annotation {
-  margin-top: 28px;
-  min-height: 260px;
   background-color: #f2f6f8;
+}
+
+.annotation-block {
+  padding-top: 64px;
+  padding-bottom: 69px;
 }
 
 .annotation-title {
-  margin: 0px 0px;
-  padding: 70px 0px 25px 0px;
+  margin-bottom: 25px;
   background-color: #f2f6f8;
   color: #000000;
   font-weight: 400;
-  line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
+  line-height: 30px;
 }
 
-.annotation p {
+p {
+  padding: 0px;
+}
+
+.annotation {
   color: #000000;
   font-weight: 400;
+  font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
 }
 
 
@@ -1113,6 +1193,7 @@ form .btn {
   display: flex;
   justify-content: space-between;
   background: #f7f3ec;
+  padding: 0 0px;
   margin-bottom: 17px;
 }
 
@@ -1149,11 +1230,7 @@ form .btn {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.catalog-items {
-  margin-left: 5px;
+  margin-bottom: 25px;
 }
 
 
@@ -1167,6 +1244,10 @@ form .btn {
   line-height: 20px;
   font-weight: bold;
   text-align: center;
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 5px 5px 5px #b1b5bd;
 }
 
 .catalog .catalog-item {
@@ -1203,7 +1284,7 @@ form .btn {
   height: 88px;
   padding: 40px 0;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 10;
+  /*  z-index: 10;*/
 }
 
 
@@ -1266,7 +1347,6 @@ form .btn {
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
-  margin-bottom: 15px;
   font-size: 18px;
   line-height: 20px;
   font-size: "PT Sans", "Arial", sans-serif;
@@ -1276,7 +1356,6 @@ form .btn {
 .catalog-item .discount {
   min-height: 20px;
   margin-top: 15px;
-  margin-bottom: 5px;
   color: #999;
   text-decoration: line-through;
 }
@@ -1313,7 +1392,7 @@ form .btn {
 /**/
 
 .factory-block {
-  min-height: 395px;
+  padding-bottom: 62px;
 }
 
 .factory-item {
@@ -1323,6 +1402,15 @@ form .btn {
   margin-bottom: 20px;
   min-height: 145px;
   border: 1px solid #ccc;
+}
+
+.factory-item:hover {
+  box-shadow: 0px 5px 5px 5px #b1b5bd;
+}
+
+.factory-item:active {
+  box-shadow: 0px 2px 2px 2px #b1b5bd;
+  opacity: 0.3;
 }
 
 .factory-item a {
@@ -1336,21 +1424,23 @@ form .btn {
   background: #f2f6f8;
 }
 
+.service-block-info {
+  padding-top: 68px;
+  margin-bottom: 29px;
+}
+
+.service-block-menu-delivery {
+  min-height: 280px;
+  padding-bottom: 47px;
+}
+
 .service-block-info-title {
-  padding-top: 75px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: #000000;
   font-weight: 400;
   line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
-}
-
-div.service-block-delivery {
-  padding: 70px 0px;
-  background-image: url("../img/car.png");
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
 }
 
 .service-block-delivery-title {
@@ -1359,9 +1449,10 @@ div.service-block-delivery {
   width: 620px;
   font-weight: 400;
   line-height: 24px;
-  ont-family: "Cuprum", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   font-size: 36px;
+  position: relative;
 }
 
 .service-block-info p,
@@ -1374,12 +1465,19 @@ div.service-block-delivery {
   font-size: 13px;
 }
 
+.service-block-delivery {
+  padding-top: 45px;
+  background-image: url("../img/car.png");
+  background-repeat: no-repeat;
+  background-position: 100% 340%;
+}
+
 
 /*кнопки в блоке*/
 
 .service-block-menu {
-  margin: 70px 0px 100px 0px;
   width: 240px;
+  padding-top: 40px;
   background-image: url("../img/shadow.png");
   background-repeat: no-repeat;
   background-position: 100% 155%;
@@ -1399,6 +1497,7 @@ div.service-block-delivery {
 .service-block-menu a {
   min-width: 195px;
   padding: 15px 20px;
+  margin-right: 0px;
   text-align: left;
   border: 1px solid #293449;
   font-weight: 700;
@@ -1434,8 +1533,8 @@ div.service-block-delivery {
 /*новый блок*/
 
 .index-content {
-  padding: 0px;
-  min-height: 537px;
+  padding-top: 80px;
+  padding-bottom: 85px;
   color: #000000;
 }
 
@@ -1444,19 +1543,18 @@ div.service-block-delivery {
 }
 
 .index-content-right {
-  padding-left: 27px;
+  margin-left: 27px;
   flex: 1;
 }
 
-h2.index-content-title {
-  margin-top: 50px;
-  padding: 30px 0px;
+.index-content-title {
   font-size: 30px;
-  line-height: 24px;
+  line-height: 30px;
+  margin-bottom: 25px;
 }
 
 .index-content p {
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
   font-size: 13px;
@@ -1465,7 +1563,7 @@ h2.index-content-title {
 }
 
 .index-content p:nth-child(3) {
-  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .index-content ul {
@@ -1522,14 +1620,7 @@ h2.index-content-title {
 
 /*footer*/
 
-.row-footer-first {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.row-footer-second {
+.footer-up {
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
@@ -1537,19 +1628,26 @@ h2.index-content-title {
   line-height: 24px;
 }
 
+.row-footer-first {
+  width: 380px;
+}
+
+.row-footer-second {
+  padding-top: 35px;
+  width: 545px;
+}
+
 .footer-up {
   color: #f1f5f7;
   background: #32425c;
 }
 
-.logo-footer {
-  padding-bottom: 35px;
-}
-
 .logo-footer a {
   display: flex;
   justify-content: center;
-  padding: 12px 40px;
+  padding: 17px 26px;
+  margin-right: 160px;
+  margin-bottom: 31px;
   font-size: 30px;
   line-height: 30px;
   background: #ee3643;
@@ -1558,13 +1656,22 @@ h2.index-content-title {
   box-shadow: 0 3px 0 0 #9a212a;
 }
 
-.footer-navigation-site {}
+.footer-navigation-site {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 35px;
+}
+
+.footer-navigation-info {
+  display: flex;
+  align-self: flex-end;
+  width: 520px;
+}
 
 
 /**/
 
 .footer-up ul {
-  width: 545px;
   list-style: none;
   justify-content: space-between;
 }
@@ -1575,9 +1682,7 @@ h2.index-content-title {
   color: #f1f5f7;
 }
 
-.row-footer-second ul {
-  width: 530px;
-}
+.row-footer-second ul {}
 
 .footer-navigation-site a:hover,
 .footer-navigation-info a:hover {
@@ -1594,8 +1699,8 @@ h2.index-content-title {
 
 .footer-down {
   display: flex;
-  padding-top: 45px;
-  padding-bottom: 0px;
+  padding-top: 37px;
+  padding-bottom: 26px;
   font-size: 16px;
   line-height: 18px;
   background: #293449;
@@ -1604,7 +1709,7 @@ h2.index-content-title {
 
 .footer-social {
   width: 180px;
-  padding-left: 60px;
+  margin-left: 60px;
   text-align: center;
 }
 
@@ -1653,6 +1758,10 @@ h2.index-content-title {
   background-position: -10px -240px;
 }
 
+.footer-mail-copyright {
+  width: 300px;
+}
+
 .footer-mail-copyright p {
   margin: 0;
   padding: 0;
@@ -1666,4 +1775,11 @@ h2.index-content-title {
 
 .footer-navigation-info a {
   color: #d6b479;
+}
+
+.catalog-page {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 60px;
 }
