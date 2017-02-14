@@ -27,11 +27,18 @@ body {
 
 h2 {
   padding-top: 70px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 p {
   padding-bottom: 40px;
+}
+
+.hidden {
+  display: none;
 }
 
 
@@ -126,13 +133,14 @@ form .search {
   background-color: #293449;
 }
 
-input {
+.main-header input {
+  margin-bottom: 0px;
   background-color: transparent;
   padding-left: 40px;
   border: none;
   position: relative;
   width: 220px;
-  height: 42px;
+  height: 38px;
   background-size: 80px;
   background-repeat: no-repeat;
   background-position: 15px 10px;
@@ -140,11 +148,11 @@ input {
   opacity: 0.7;
 }
 
-input:hover {
+.main-header input:hover {
   opacity: 1;
 }
 
-input:focus {
+.main-header input:focus {
   position: absolute;
   outline: none;
   color: #000;
@@ -152,11 +160,11 @@ input:focus {
   opacity: 1;
 }
 
-input:focus + label {
+.main-header input:focus + label {
   display: none;
 }
 
-input:focus {
+.main-header input:focus {
   position: relative;
   background-size: 17px;
   background-position: 15px 11px;
@@ -372,7 +380,7 @@ div.block-user {
   text-transform: none;
 }
 
-a.enter {
+a.login {
   position: relative;
   padding: 11.5px 25px 11.5px;
   margin-left: 20px;
@@ -395,7 +403,7 @@ a.registration {
   margin-right: 0px;
 }
 
-a.enter::before {
+a.login::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -1102,12 +1110,20 @@ p {
   background-position: -10px -350px;
 }
 
-.categories-item-slider {
+.categories-item-slider-one {
   margin-right: 20px;
   min-height: 266px;
   text-align: center;
   flex: 1;
   background: url("../img/slider1.jpg") no-repeat;
+}
+
+.categories-item-slider-two {
+  margin-right: 20px;
+  min-height: 266px;
+  text-align: center;
+  flex: 1;
+  background: url("../img/slider2.jpg") no-repeat;
 }
 
 .name-category {
@@ -1124,7 +1140,8 @@ p {
   color: #ffffff;
 }
 
-.categories-item-slider .name-category {
+.categories-item-slider-one .name-category,
+.categories-item-slider-two .name-category {
   flex-wrap: wrap;
   width: 245px;
   padding-left: 24px;
@@ -1175,7 +1192,8 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.categories-item-slider .btn {
+.categories-item-slider-one .btn,
+.categories-item-slider-two .btn {
   position: relative;
   display: flex;
   justify-content: center;
@@ -1429,9 +1447,9 @@ p {
   margin-bottom: 29px;
 }
 
-.service-block-menu-delivery {
+.service-block-menu-general {
   min-height: 280px;
-  padding-bottom: 47px;
+  padding-bottom: 43px;
 }
 
 .service-block-info-title {
@@ -1443,7 +1461,7 @@ p {
   font-size: 30px;
 }
 
-.service-block-delivery-title {
+.service-block-general-title {
   padding-top: 0px;
   padding-bottom: 30px;
   width: 620px;
@@ -1456,7 +1474,7 @@ p {
 }
 
 .service-block-info p,
-.service-block-delivery p {
+.service-block-general p {
   padding: 0px;
   color: #000000;
   font-weight: 400;
@@ -1465,11 +1483,31 @@ p {
   font-size: 13px;
 }
 
-.service-block-delivery {
+.service-block-general {
   padding-top: 45px;
+}
+
+.delivery {
   background-image: url("../img/car.png");
   background-repeat: no-repeat;
   background-position: 100% 340%;
+}
+
+.guarentee {
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+
+.credit {
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 150px 42px;
+}
+
+.send {
+  margin-top: 30px;
+  border-radius: 3px;
 }
 
 
@@ -1515,7 +1553,7 @@ p {
 .service-block-menu .active {
   color: #32425c;
   background-color: #ffffff;
-  border: none;
+  border-color: transparent;
 }
 
 .service-block-menu .active:hover {
@@ -1782,4 +1820,272 @@ p {
   justify-content: space-between;
   padding-top: 18px;
   padding-bottom: 60px;
+}
+
+
+/* Всплывающая форма */
+
+
+/*Добавим анимации для открытия формы. Для этого опишем анимацию.*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/*Добавим анимацию для тряски формы в случае ошибки.*/
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-content-basket {
+  position: absolute;
+  top: 420px;
+  left: 50%;
+  margin-left: -330px;
+  padding: 35px 80px;
+  text-align: center;
+  color: #000;
+  border-top: 5px solid red;
+  background: #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-title h2 {
+  position: absolute;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400px;
+}
+
+.modal-content-basket .btn:last-child {
+  margin-right: 0px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #cccccc;
+}
+
+.modal-content-write {
+  position: absolute;
+  top: 550%;
+  left: 50%;
+  margin-left: -330px;
+  width: 620px;
+  padding: 55px 80px 30px 80px;
+  text-align: center;
+  color: #000;
+  border-top: 5px solid #ee3643;
+  background: #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.modal-content-write input,
+textarea {
+  width: 220px;
+  margin: 0 0 25px 0;
+  padding: 10px 20px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  vertical-align: middle;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+input .mail {
+  padding-right: 0px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.modal-content-write .btn {
+  margin-right: 0px;
+  width: 100%;
+  color: #fff;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+
+}
+.modal-content {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  display: none;
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+  color: #000000;
+  background: #f8f3f0 url("img/pattern-white.jpg");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.modal-content-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 940px;
+  height: 450px;
+  margin-top: -280px;
+  margin-left: -390px;
+  background: #e9e5dc url("../img/map.png");
+  border: 7px solid white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+/*CSS класс, который мы будем добавлять к модальному окну.
+ Назад Вперед*/
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+.modal-content-close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #e9292a;
+  border-radius: 1px;
+}
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+.modal-content h2 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 30px;
+}
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+.modal-content .login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 236px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+.login-form input:focus {
+  border-color: #663d15;
+}
+.login-form input.icon-user {
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 100% -504px;
+}
+.login-form input.icon-password {
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 100% -45px;
+}
+.login-form .restore {
+  float: right;
+  color: #000000;
+}
+.login-form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+.login-checkbox input[type="checkbox"] {
+  display: none;
+}
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.login-checkbox:hover {
+  color: #663d15;
+}
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
 }
