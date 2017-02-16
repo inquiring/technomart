@@ -41,7 +41,7 @@
         </div>
         <div class="block-contacts">
           <p class="phone">
-            <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+            <a href="tel:88125550555">+7 (812) 555-05-55</a>
           </p>
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
@@ -350,33 +350,38 @@
   </footer>
   <div class="modal-content-basket">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    <div class="circle"></div>
-    <h2 class="modal-content-title">Товар добавлен в корзину!</h2>
+    <div class="string">
+      <span class="circle"></span>
+      <h2 class="modal-content-title">Товар добавлен в корзину!</h2>
+    </div>
     <div class="gray">
       <a href="" class="btn">ОФОРМИТЬ ЗАКАЗ</a>
       <a href="" class="btn">ПРОДОЛЖИТЬ ПОКУПКИ</a>
     </div>
   </div>
   <div class="modal-content-write">
-    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    <form action="https://echo.htmlacademy.ru" class="write-form" method="post">
-      <div class="row">
-        <div class="half-width">
-          <label for="name">Ваше имя:</label>
-          <input class="user-name" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+    <div class="form">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" class="write-form" method="post">
+        <div class="row">
+          <div class="half-width">
+            <label for="name">Ваше имя:</label>
+            <input class="user-name" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="half-width">
+            <label for="email">Ваш e-mail:</label>
+            <input class="mail" type="email" name="name" placeholder="Для отправки ответа">
+          </div>
         </div>
-        <div class="half-width">
-          <label for="email">Ваш e-mail:</label>
-          <input class="mail" type="email" name="name" placeholder="Для отправки ответа">
+        <div class="row">
+          <label for="review">Текст письма:</label>
+          <textarea name="review" id="review" rows="5">В свободной форме</textarea>
         </div>
-      </div>
-      <div class="row">
-        <label for="review">Текст письма:</label>
-        <textarea type="text" name="review" id="review" rows="5">В свободной форме</textarea>
-      </div>
+      </form>
+    </div>
+    <div class="gray">
       <button class="btn" type="submit">ОТПРАВИТЬ</button>
-    </form>
-
+    </div>
   </div>
   <div class="modal-content hidden">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
@@ -395,9 +400,10 @@
   </div>
   <div class="modal-content-map">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6154130949237!2d30.321169016014476!3d59.93852358187612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1487051534468" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6154130949237!2d30.321169016014476!3d59.93852358187612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1487051534468" width="940" height="450" style="border:0" allowfullscreen></iframe>
   </div>
   <script>
+    //    вход
     //    <!-- найти кнопку, которая будет его открывать.-->
     var link = document.querySelector(".login");
     //    <!--ищем модальное окно в интернете-->

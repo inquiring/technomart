@@ -315,7 +315,7 @@ form .search {
 }
 
 .block-about {
-  padding-left: 55px;
+  padding-left: 52px;
   padding-right: 16px;
   font-size: 16px;
   font-style: italic;
@@ -337,13 +337,13 @@ form .search {
 .phone a {
   position: relative;
   display: block;
-  padding: 10px 0px;
+  padding: 7px 0px;
   padding-left: 28px;
   text-decoration: none;
   font-size: 21px;
   color: #e9292a;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 21px;
   border: #ffffff solid 2px;
 }
 
@@ -363,7 +363,7 @@ p.phone {
 
 .block-contacts .address {
   padding: 0px;
-  margin-top: 3px;
+  margin-top: 6px;
   color: #32425c;
   font-size: 14px;
   font-weight: 400;
@@ -382,7 +382,7 @@ div.block-user {
 
 a.login {
   position: relative;
-  padding: 11.5px 25px 11.5px;
+  padding: 10.5px 25px;
   margin-left: 20px;
   font-size: 21px;
   line-height: 21px;
@@ -394,7 +394,7 @@ a.login {
 }
 
 a.registration {
-  padding: 11.5px 25px;
+  padding: 10.5px 25px;
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
@@ -662,7 +662,7 @@ a.login::before {
 
 .range-filter {
   width: 220px;
-  margin-bottom: 22px;
+  margin-bottom: 0px;
 }
 
 .range-controls {
@@ -674,7 +674,7 @@ a.login::before {
   padding-right: 20px;
   padding-left: 20px;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: #f7f3ec;
   margin-bottom: 8px;
 }
 
@@ -714,13 +714,6 @@ a.login::before {
   font-size: 0;
 }
 
-.price-controls label {
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-}
-
 .max-price {
   text-align: right;
 }
@@ -730,21 +723,24 @@ a.login::before {
   font-size: 17px;
   width: 95px;
   margin-left: 0px;
-  padding: 8px 0px;
+  padding: 11px 0px;
   text-align: center;
   color: #283136;
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: #f7f3ec;
+  /*
   padding-top: 0px;
   padding-bottom: 0px;
+*/
 }
 
 
 /*форма выше*/
 
 .catalog-content-title {
-  margin-top: 40px;
+  margin-top: 14px;
+  padding-top: 15px;
   margin-bottom: 13px;
   font-size: 17px;
   line-height: 30px;
@@ -754,8 +750,14 @@ a.login::before {
 }
 
 .catalog-content-title-two {
-  margin-top: 42px;
+  margin-top: 18px;
+  padding-top: 14px;
   margin-bottom: 15px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
+  border-top: 1px solid #e5e5e5;
 }
 
 .factory-item-incatalog {
@@ -1008,7 +1010,7 @@ div .catalog {
 }
 
 .annotation-block {
-  padding-top: 64px;
+  padding-top: 55px;
   padding-bottom: 69px;
 }
 
@@ -1149,11 +1151,8 @@ p {
   padding-bottom: 0px;
   margin-bottom: 122px;
   font-size: 36px;
-  /* проверено */
-  line-height: 30px;
-  /* проверено */
+  line-height: 36px;
   font-weight: 700;
-  /* проверено */
 }
 
 .name-category p {
@@ -1221,7 +1220,7 @@ p {
 }
 
 .block-caption .block-title {
-  padding: 30px;
+  padding: 29px;
   flex: 1;
   align-self: flex-start;
   text-transform: uppercase;
@@ -1364,7 +1363,7 @@ p {
 .catalog-item .title {
   min-height: 40px;
   padding: 0 25px;
-  margin-top: 10px;
+  margin-top: 13px;
   font-size: 18px;
   line-height: 20px;
   font-size: "PT Sans", "Arial", sans-serif;
@@ -1453,23 +1452,23 @@ p {
 }
 
 .service-block-info-title {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   color: #000000;
   font-weight: 400;
-  line-height: 24px;
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .service-block-general-title {
   padding-top: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   width: 620px;
   font-weight: 400;
-  line-height: 24px;
+  font-size: 36px;
+  line-height: 36px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
-  font-size: 36px;
   position: relative;
 }
 
@@ -1581,7 +1580,7 @@ p {
 }
 
 .index-content-right {
-  margin-left: 27px;
+  margin-left: 40px;
   flex: 1;
 }
 
@@ -1593,6 +1592,15 @@ p {
 
 .index-content p {
   margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.index-content-right p {
+  margin-bottom: 32px;
   font-size: 13px;
   line-height: 24px;
   font-size: 13px;
@@ -1612,7 +1620,7 @@ p {
 .transport-companies .line-flex {
   display: flex;
   align-items: center;
-  padding: 13px 0px 10px 0px;
+  padding: 20px 0px 0px 0px;
   margin-bottom: 0px;
   font-size: 18px;
   line-height: 20px;
@@ -1639,7 +1647,7 @@ p {
 
 .index-content-left .btn {
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 39px;
   padding: 10px 0px;
   width: 220px;
   box-sizing: border-box;
@@ -1664,6 +1672,8 @@ p {
   padding-bottom: 50px;
   font-size: 18px;
   line-height: 24px;
+  color: #f1f5f7;
+  background: #32425c;
 }
 
 .row-footer-first {
@@ -1673,11 +1683,6 @@ p {
 .row-footer-second {
   padding-top: 35px;
   width: 545px;
-}
-
-.footer-up {
-  color: #f1f5f7;
-  background: #32425c;
 }
 
 .logo-footer a {
@@ -1720,7 +1725,9 @@ p {
   color: #f1f5f7;
 }
 
-.row-footer-second ul {}
+.footer-navigation-info {
+  margin-left: 20px;
+}
 
 .footer-navigation-site a:hover,
 .footer-navigation-info a:hover {
@@ -1746,8 +1753,9 @@ p {
 }
 
 .footer-social {
-  width: 180px;
-  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 42px;
   text-align: center;
 }
 
@@ -1798,6 +1806,15 @@ p {
 
 .footer-mail-copyright {
   width: 300px;
+  display: flex;
+}
+
+.footer-mail-copyright .mail {
+  flex: 1;
+}
+
+.footer-mail-copyright .copyright {
+  width: 111px;
 }
 
 .footer-mail-copyright p {
@@ -1868,58 +1885,127 @@ p {
 
 .modal-content-basket {
   position: absolute;
-  top: 420px;
-  left: 50%;
+  top: 411px;
+  left: 652px;
   margin-left: -330px;
-  padding: 35px 80px;
+  width: 620px;
+  /*  padding: 35px 80px;*/
   text-align: center;
   color: #000;
-  border-top: 5px solid red;
+  border-top: 7px solid red;
   background: #fff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.modal-content-title h2 {
+.string {
+  display: inline-block;
+}
+
+.circle {
+  position: relative;
+  width: 66px;
+  height: 66px;
+  background: #63a63e;
+  border-radius: 33px;
+}
+
+.circle:before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  width: 45px;
+  height: 45px;
+  background: url("../img/shape.png") no-repeat;
+}
+
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h2.modal-content-title {
+  padding-top: 17px;
+  margin-left: 101px;
+  margin-bottom: 0px;
   position: absolute;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400px;
 }
 
+.modal-content-basket div.string {
+  display: flex;
+  width: 460px;
+  padding: 47px 80px;
+}
+
+.modal-content-basket div.gray {
+  display: flex;
+  width: 460px;
+  padding: 38px 80px;
+  background-color: #f1f1f1;
+}
+
+.modal-content-basket .btn {
+  flex: 1;
+  padding: 12px 48px;
+}
+
 .modal-content-basket .btn:last-child {
   margin-right: 0px;
   color: #000;
   background: #fff;
-  border: 1px solid #cccccc;
+  /*  border: 1px solid #cccccc;*/
 }
 
 .modal-content-write {
   position: absolute;
-  top: 550%;
-  left: 50%;
+  top: 2520px;
+  left: 652px;
   margin-left: -330px;
-  width: 620px;
-  padding: 55px 80px 30px 80px;
   text-align: center;
-  color: #000;
-  border-top: 5px solid #ee3643;
   background: #fff;
+  color: #000;
+  border-top: 7px solid #ee3643;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-label {
+.modal-content-write .form {
+  padding: 46px 80px;
+  padding-bottom: 43px;
+  width: 460px;
+}
+
+.half-width {
+  width: 220px;
+}
+
+.modal-content-write .gray {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0px;
+  background-color: #f1f1f1;
+}
+
+.price-controls label {
   display: block;
   text-align: left;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 18px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
 }
 
 .modal-content-write input,
 textarea {
-  width: 220px;
-  margin: 0 0 25px 0;
-  padding: 10px 20px;
+  width: 203px;
+  margin: 0 0 20px 0;
+  padding: 9px 0px;
+  padding-left: 15px;
   border: 1px solid #cccccc;
   border-radius: 3px;
   vertical-align: middle;
@@ -1933,12 +2019,13 @@ input .mail {
 }
 
 textarea {
-  width: 100%;
+  width: 460px;
+  margin-bottom: 0px;
 }
 
 .modal-content-write .btn {
   margin-right: 0px;
-  width: 100%;
+  width: 460px;
   color: #fff;
   background: #ee3643;
   border-radius: 3px;
@@ -1983,8 +2070,8 @@ textarea {
 }
 .modal-content-close {
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 8px;
+  right: 8px;
   width: 22px;
   height: 22px;
   font-size: 0;
@@ -1997,9 +2084,9 @@ textarea {
   content: "";
   position: absolute;
   top: 10px;
-  left: 2px;
-  width: 19px;
-  height: 3px;
+  left: -1px;
+  width: 25px;
+  height: 4px;
   background-color: #e9292a;
   border-radius: 1px;
 }
