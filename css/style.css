@@ -19,6 +19,12 @@ body {
   padding: 0 10px;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,10 +117,11 @@ p {
   justify-content: space-between;
 }
 
-.flex-left {
+.main-header-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 440px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -128,6 +135,7 @@ p {
   display: block;
   padding: 9px 0px;
   width: 220px;
+  margin: 0;
   font-size: 24px;
   line-height: 24px;
   background-color: #ee3643;
@@ -190,7 +198,7 @@ form .search {
   background-image: url(../img/icon-search-red.png);
 }
 
-.flex-right {
+.main-header-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,6 +247,13 @@ form .search {
 .user-block a:active {
   background-color: #161d29;
   opacity: 0.6;
+}
+
+
+/*для корзины*/
+
+.basket-full {
+  background-color: #ee3643;
 }
 
 .checkout a {
@@ -415,12 +430,19 @@ p.phone {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
   align-self: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   width: 300px;
   text-decoration: none;
   text-transform: none;
+}
+
+.block-user-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 300px;
 }
 
 .login {
@@ -1492,6 +1514,7 @@ p {
   -ms-flex: 1;
   flex: 1;
   -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
   align-self: flex-start;
   text-transform: uppercase;
   font-size: 30px;
@@ -1504,6 +1527,8 @@ p {
 .block-caption a {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   padding: 12px 0px;
   margin-right: 25px;
@@ -1747,9 +1772,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 218px;
   margin-bottom: 20px;
   min-height: 145px;
@@ -1782,7 +1810,7 @@ p {
 }
 
 .service-block-menu-general {
-  min-height: 280px;
+  height: 280px;
   padding-bottom: 43px;
 }
 
@@ -2068,6 +2096,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: end;
+  -webkit-align-self: flex-end;
   align-self: flex-end;
   width: 520px;
 }
@@ -2474,7 +2503,7 @@ textarea {
   margin-left: -230px;
   padding: 50px 80px;
   color: #000000;
-  background: #f8f3f0 url("img/e.jpg");
+  background: #f8f3f0;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
