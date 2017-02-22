@@ -36,6 +36,7 @@
     <div class="site-info-layout container">
       <div class="row row-about">
         <div class="block-about">
+          Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
         </div>
         <div class="block-contacts">
           <p class="phone">
@@ -77,26 +78,13 @@
     </div>
   </div>
   <main>
-    <div class="categories-block container">
-      <div class="row-first">
-        <div class="categories-item materials">
-          <div class="flag flag-new">новинка</div>
-          <div class="name-category">Материалы </div>
-          <a class="btn" href="#">на любой вкус </a>
-        </div>
-        <div class="categories-item instrument">
-          <div class="name-category">Инструмент </div>
-          <a class="btn" href="#">на все случаи </a>
-        </div>
-        <div class="categories-item technics">
-          <div class="name-category">Техника </div>
-          <a class="btn" href="#">для стройки </a>
-        </div>
-      </div>
-      <div class="row-second">
-        <div class="categories-item-slider-one ">
-          <div class="name-category">ПЕРФОРАТОРЫ
-            <p>Настоящие мужские игрушки </p>
+    <div class="container">
+      <div class="categories-block ">
+        <div class="row">
+          <div class="categories-item materials">
+            <div class="flag flag-new">новинка</div>
+            <div class="name-category">Материалы </div>
+            <a class="btn" href="#">на любой вкус </a>
           </div>
           <div class="categories-item instrument">
             <div class="name-category">Инструмент </div>
@@ -196,8 +184,6 @@
         <p class="block-title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</p>
         <a class="btn" href="#">все производители </a>
       </div>
-      </div>
-      </div>
       <div class="factory-block row">
         <a class="factory-item" href="#"><img width="218" height="143" src="img/bosch.jpg" alt="bosch"></a>
         <a class="factory-item" href="#"><img width="218" height="143" src="img/makita.jpg" alt="Makita"></a>
@@ -230,6 +216,7 @@
           <div class="service-block-delivery delivery ">
             <div class="service-block-general-title ">ДОСТАВКА</div>
             <p>Мы с удовольствием доставим ваш товар прямо
+              <br> к вашему подъезду совершенно бесплатно!&nbsp; Ведь мы не плохо заработаем,
               <br> поднимая его на ваш этаж!</p>
           </div>
           <div class="service-block-guarentee guarentee hidden ">
@@ -242,7 +229,7 @@
           <div class="service-block-credit credit hidden">
             <div class="service-block-general-title">КРЕДИТ</div>
             <p>Залезть в долговую яму стало проще!
-              <br> Кредитные консультанты придут вам на помощь
+              <br> Кредитные консультанты придут вам на помощь.
             </p>
             <a class="btn send" href="#credit">отправить заявку </a>
           </div>
@@ -265,6 +252,7 @@
         <div class="index-content-right">
           <div class="index-content-title">КОНТАКТЫ</div>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <a class="map js-open-map" href="#">
             <img width="300" height="160" src="img/map.jpg" alt="карта">
           </a>
           <a class="btn" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ! </a>
@@ -373,6 +361,8 @@
       <button class="btn" type="submit">ОТПРАВИТЬ</button>
     </div>
   </div>
+  <!--  этой формы нет в проекте, выполнена как пример-->
+  <div class="modal-content">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="modal-content-title">Личный кабинет</h2>
     <p>Введите свой логин и пароль.</p>
@@ -389,7 +379,7 @@
   </div>
   <div class="modal-content-map">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6154130949237!2d30.321169016014476!3d59.93852358187612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1487051534468" width="940" height="450" style="border:0" allowfullscreen></iframe>
+    <div id="yandex-map"></div>
   </div>
   <script>
     //    вход
@@ -448,8 +438,11 @@
         }
       }
     });
+    
+    
     //    карта
     var mapOpen = document.querySelector(".js-open-map");
+
     var mapPopup = document.querySelector(".modal-content-map");
     var mapClose = mapPopup.querySelector(".modal-content-close");
 
