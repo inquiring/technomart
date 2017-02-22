@@ -104,23 +104,35 @@
               <button class="toogle-left"></button>
               <button class="toogle-right"></button>
             </div>
-            <a class="btn" href="#">открыть каталог </a>
+            <div class="row">
+              <a class="btn" href="#">открыть каталог </a>
+              <div class="slider-dots-one indicator"></div>
+              <div class="slider-dots-two"></div>
+            </div>
           </div>
           <div class="categories-item-slider-two hidden">
             <div class="name-category">ДРЕЛИ
               <p>Соседям на радость! </p>
             </div>
-            <a class="btn" href="#">открыть каталог </a>
+            <div class="toogle row">
+              <button class="toogle-left"></button>
+              <button class="toogle-right"></button>
+            </div>
+            <div class="row">
+              <a class="btn" href="#">открыть каталог </a>
+              <div class="slider-dots-one "></div>
+              <div class="slider-dots-two "></div>
+            </div>
           </div>
-          <div class="column">
-            <div class="categories-item discount">
-              <div class="name-category">Скидка 50% </div>
-              <a class="btn" href="#">на 350 товаров </a>
-            </div>
-            <div class="categories-item delivery">
-              <div class="name-category">Доставка </div>
-              <a class="btn" href="#">бесплатно </a>
-            </div>
+        </div>
+        <div class="column">
+          <div class="categories-item discount">
+            <div class="name-category">Скидка 50% </div>
+            <a class="btn" href="#">на 350 товаров </a>
+          </div>
+          <div class="categories-item delivery">
+            <div class="name-category">Доставка </div>
+            <a class="btn" href="#">бесплатно </a>
           </div>
         </div>
       </div>
@@ -252,7 +264,7 @@
         <div class="index-content-right">
           <div class="index-content-title">КОНТАКТЫ</div>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a class="map js-open-map" href="#">
+          <a class="map" href="#">
             <img width="300" height="160" src="img/map.jpg" alt="карта">
           </a>
           <a class="btn" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ! </a>
@@ -329,10 +341,10 @@
   <div class="modal-content-basket hidden">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <div class="string">
-      <span class="circle"></span>
+      <div class="circle"></div>
       <h2 class="modal-content-title">Товар добавлен в корзину!</h2>
     </div>
-    <div class="gray">
+    <div class="gray row">
       <a href="" class="btn">ОФОРМИТЬ ЗАКАЗ</a>
       <a href="" class="btn">ПРОДОЛЖИТЬ ПОКУПКИ</a>
     </div>
@@ -377,7 +389,7 @@
       <button class="btn" type="submit">Войти</button>
     </form>
   </div>
-  <div class="modal-content-map">
+  <div class="modal-content-map hidden">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <div id="yandex-map"></div>
   </div>
@@ -438,8 +450,8 @@
         }
       }
     });
-    
-    
+
+
     //    карта
     var mapOpen = document.querySelector(".js-open-map");
 

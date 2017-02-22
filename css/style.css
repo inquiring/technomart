@@ -223,7 +223,7 @@ form .search {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  width: 500px;
+  width: 490px;
 }
 
 
@@ -1424,14 +1424,18 @@ p {
 .categories-item-slider-one {
   position: relative;
   margin-right: 20px;
+  margin-bottom: 20px;
   min-height: 266px;
+  width: 620px;
   text-align: center;
   background: url("../img/slider1.jpg") no-repeat;
 }
 
 .categories-item-slider-two {
   margin-right: 20px;
+  margin-bottom: 20px;
   min-height: 266px;
+  width: 620px;
   text-align: center;
   background: url("../img/slider2.jpg") no-repeat;
 }
@@ -1548,7 +1552,7 @@ p {
   line-height: 18px;
   /* проверено */
   font-weight: 400;
-  margin: 0px 400px 0px 24px;
+  margin: 0px 60px 0px 24px;
   padding: 10px 48px;
   border-radius: 3px;
 }
@@ -2526,6 +2530,36 @@ p {
 
 .string {
   display: inline-block;
+  vertical-align: top;
+}
+
+.slider-dots-one {
+  position: relative;
+  top: 15px;
+  right: 144px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.slider-dots-two {
+  position: relative;
+  top: 15px;
+  right: 294px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.indicator {
+  position: relative;
+  top: 15px;
+  right: 144px;
+  width: 10px;
+  height: 10px;
+  background: url("../img/sliderindicator.png");
 }
 
 .circle {
@@ -2534,6 +2568,7 @@ p {
   height: 66px;
   background: #63a63e;
   border-radius: 33px;
+  margin-right: 32px;
 }
 
 .circle:before {
@@ -2552,21 +2587,20 @@ h2 {
 }
 
 h2.modal-content-title {
-  padding-top: 17px;
-  margin-left: 101px;
+  padding-top: 18px;
   margin-bottom: 0px;
-  position: absolute;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400px;
 }
 
 .modal-content-basket div.string {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 460px;
-  padding: 22px 76px 48px;
+  margin-top: 47px;
+  margin-left: 78px;
+  margin-right: 125px;
+  margin-bottom: 51px;
 }
 
 .modal-content-basket div.gray {
@@ -2574,28 +2608,29 @@ h2.modal-content-title {
   display: -ms-flexbox;
   display: flex;
   width: 460px;
-  padding: 39px 80px 37px 80px;
+  padding: 36px 82px 37px 78px;
   background-color: #f1f1f1;
 }
 
 .modal-content-basket .btn {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 10px 48px;
+  margin-right: 16px;
+  padding: 10px 60.5px;
+  border-radius: 3px;
 }
 
 .modal-content-basket .btn:last-child {
   margin-right: 0px;
+  padding: 10px 46.5px;
+  border-radius: 3px;
   color: #000;
   background: #fff;
-  /*  border: 1px solid #cccccc;*/
+  border: 1px solid #cccccc;
 }
 
 .modal-content-write {
-  position: fixed;
-  top: 40%;
-  left: 325px;
+  position: absolute;
+  top: 2520px;
+  left: 323px;
   margin: auto;
   text-align: center;
   background: #fff;
@@ -2605,7 +2640,7 @@ h2.modal-content-title {
 }
 
 .modal-content-write .form {
-  padding: 46px 80px;
+  padding: 47px 80px;
   padding-bottom: 43px;
   width: 460px;
   text-align: left;
@@ -2613,6 +2648,10 @@ h2.modal-content-title {
 
 .half-width {
   width: 220px;
+}
+
+.half-width label {
+  margin-bottom: 0px;
 }
 
 .modal-content-write .gray {
@@ -2636,10 +2675,10 @@ h2.modal-content-title {
 
 .modal-content-write input,
 textarea {
-  width: 203px;
-  margin: 0 0 20px 0;
+  width: 202px;
+  margin: 9px 0 20px 0;
   padding: 9px 0px;
-  padding-left: 15px;
+  padding-left: 13px;
   border: 1px solid #cccccc;
   border-radius: 3px;
   vertical-align: middle;
@@ -2684,10 +2723,10 @@ textarea {
   left: 50%;
   width: 940px;
   height: 450px;
-  margin-top: 1055px;
-  margin-left: -477px;
-  background: #e9e5dc url("../img/map_.png");
-  border: 7px solid white;
+  margin-top: -280px;
+  margin-left: -470px;
+  background: #e9e5dc url("../img/map_.jpg");
+  /*  border: 7px solid white;*/
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
@@ -2781,6 +2820,7 @@ textarea {
   padding-right: 40px;
   font-size: 14px;
   line-height: 24px;
+  height: 24px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
@@ -2804,27 +2844,30 @@ textarea {
 */
 }
 
-
-}
 .login-form .restore {
   float: right;
   color: #000000;
 }
+
 .login-form .btn {
   width: 100%;
   margin-top: 15px;
 }
+
 .login-checkbox input[type="checkbox"] {
   display: none;
 }
+
 .login-checkbox {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
 }
+
 .login-checkbox:hover {
   color: #663d15;
 }
+
 .login-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: -3px;
@@ -2833,6 +2876,7 @@ textarea {
   height: 17px;
   border: 2px solid #000000;
 }
+
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
@@ -2843,6 +2887,7 @@ textarea {
   height: 2px;
   background-color: #000000;
 }
+
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
