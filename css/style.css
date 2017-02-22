@@ -2594,7 +2594,7 @@ h2.modal-content-title {
 
 .modal-content-write {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 325px;
   margin: auto;
   text-align: center;
@@ -2684,9 +2684,9 @@ textarea {
   left: 50%;
   width: 940px;
   height: 450px;
-  margin-top: 2055px;
+  margin-top: 1055px;
   margin-left: -477px;
-  background: #e9e5dc url("../img/map_.jpg");
+  background: #e9e5dc url("../img/map_.png");
   border: 7px solid white;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
