@@ -1,9 +1,12 @@
-node_modules/
 .DS_Store
-Thumbs.db
+.BIN
 .idea
-*.sublime*
-*.log
-*.psd
 *.ai
+*.log
 *.pdf
+*.psd
+*.sublime*
+css/*.css
+node_modules/
+Thumbs.db
+build/
