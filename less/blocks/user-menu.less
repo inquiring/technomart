@@ -1,0 +1,123 @@
+.user-menu {
+    display: flex;
+    margin-top: 46px;
+    margin-bottom: 26px;
+    justify-content: space-between;
+    /* .user-menu__slogan */
+    &__slogan {
+         width: 320px;
+    }
+    /* .user-menu__slogan-text */
+    &__slogan-text {
+        width: 196px;
+        margin-left: 52px;
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 400;
+        font-style: italic;
+        color: #ee3643;
+    }
+    /* .user-menu__contacts */
+    &__contacts {
+        width: 271px;
+    }
+    /* .user-menu__contacts-tel */
+    &__contacts-tel {
+        display: block;
+        padding: 6px 0;
+        font-size: 21px;
+        font-weight: 400;
+        color: #e9292a;
+        text-align: center;
+        border: 4px solid #fff;
+        box-sizing: border-box;
+    }
+    /* .user-menu__contacts-adress */
+    &__contacts-adress {
+        margin: 0;
+        padding-top: 4px;
+        padding-left: 9px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #32425c;
+    }
+    /* .user-menu__login */
+    &__login {
+        width: 299px;
+        margin-left: 51px;
+    }
+    /* .user-menu__login-enter */
+    &__login-enter {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* .user-menu__login-enter-link */
+    &__login-enter-link {
+        display: block;
+        padding: 10px 1.7121em;
+
+        font-size: 21px;
+        font-weight: 400;
+        color: #000;
+        background: #fff;
+        box-sizing: border-box;
+        &--registration{
+            padding: 10px 1.148em;
+        }
+        &:hover {
+          color: #ee3643;
+        }
+        &:active {
+          color: #c5c5c5;
+        }
+    }
+    /* .user-menu__login-info */
+    &__login-info {
+        display: flex;
+        flex-wrap: wrap;
+        /* .user-menu__login-info--hidden */
+        &--hidden {
+            display: none;
+        }
+    }
+    /* .user-menu__login-name */
+    &__login-name {
+        width: 299px;
+        padding: 8px 0 10px;
+        font-size: 21px;
+        font-weight: 400;
+        color: #000;
+        background: #fff;
+    }
+    /* .user-menu__login-info-list */
+    &__login-info-list {
+        display: flex;
+        margin-top: 8px;
+        justify-content: flex-start;
+        color: #32425c;
+    }
+    /* .user-menu__login-info-item */
+    &__login-info-item {
+        margin-left: 16px;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #32425c;
+        text-decoration: underline;
+        &:last-child {
+          margin-left: 33px;
+          list-style-type: disc;
+        }
+    }
+    /* .user-menu__login-info-link */
+    &__login-info-link {
+        &:hover {
+          color: #ee3643;
+        }
+        &:active {
+          color: #c5c5c5;
+        }
+    }
+}

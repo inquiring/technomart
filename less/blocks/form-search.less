@@ -1,0 +1,30 @@
+.form-search {
+    /* .form-search__name */
+    &__name {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    /* .form-search__input */
+    &__input {
+        position: relative;
+        margin-bottom: 0px;
+        padding-left: 40px;
+        border: none;
+        height: 42px;
+        width: 100%;
+        background: @main-color url(../img/icon-search_with_text.png) no-repeat 17px 12px;
+        &:hover {
+            background: transparent url(../img/icon-search.png)no-repeat 17px 12px;
+        }
+        &:focus {
+            background: #fff url(../img/icon-search-red.png) no-repeat 12px 13px;
+        }
+    }
+}
+

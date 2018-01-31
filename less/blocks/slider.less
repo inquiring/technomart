@@ -1,0 +1,115 @@
+/*====== SLIDER =======*/
+
+.slider {
+  position: relative;
+  display: flex;
+  // width: 620px;
+  transition: all 3s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#btn-1:checked~.slider__inner .slider__inner-content:first-child,
+#btn-2:checked~.slider__inner .slider__inner-content:last-child {
+  display: flex;
+}
+
+.slider__inner {
+  width: 100%;
+}
+
+.slider__inner-content {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.slider__inner-content:first-child {
+  background: #6b5c49 url("../img/slider1.jpg") no-repeat 100%;
+
+}
+
+.slider__inner-content:last-child {
+  background: #584e44 url("../img/slider2.jpg") no-repeat 100%;
+}
+
+.slider__title {
+  width: 100%;
+  margin: 25px 0 5px;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slider__subtitle {
+  width: 100%;
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.slider__link {
+  width: 195px;
+  margin-top: 122px;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: #ee3643;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.slider__link:hover {
+  background: #ca2c37;
+}
+
+.slider__link:active {
+  background: #ba2732;
+}
+
+.icon-left-big {
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    // margin-left: 25px;
+    bottom: 0px;
+    left: 0px;
+    width: 30px;
+    height: 45px;
+    background: url(../img/icon-left.png) no-repeat;
+  }
+}
+.icon-right-big {
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    // margin-left: 25px;
+    bottom: 0px;
+    right: 0px;
+    width: 30px;
+    height: 45px;
+    background: url(../img/icon-right.png) no-repeat;
+  }
+}
+
+

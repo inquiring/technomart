@@ -1,0 +1,131 @@
+.popup {
+  position: fixed;
+  display: none;
+  width: 620px;
+  top: 40%;
+  left: 30%;
+  justify-content: center;
+  margin-left: -34px;
+  margin-top: -24px;
+  padding: 46px 37px 37px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-top: 7px solid #ee3643;
+  border-bottom: 88px solid #f1f1f1;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.7);
+}
+
+.popup-form {
+  display: flex;
+  width: 460px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 0 auto;
+}
+
+.half-width {
+  display: flex;
+  width: 47%;
+  margin-bottom: 23px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.half-width:first-of-type {
+  margin-right: 23px;
+}
+
+.popup-form label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.half-width input,
+.popup-form textarea {
+  width: 220px;
+  padding: 13px 15px;
+  margin-top: 13px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  border: 2px solid #d7dcde;
+  /*outline: none;*/
+}
+
+.popup-form textarea {
+  width: 100%;
+}
+
+.button {
+  position: absolute;
+  display: inline-block;
+  width: 460px;
+  bottom: -62px;
+  padding: 10px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background: #ca2c37;
+}
+
+.button:active {
+  background: #ba2732;
+}
+
+.close  {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.close::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -12px;
+  width: 25px;
+  height: 5px;
+  background-color: #ee3643;
+  transform: rotate(45deg);
+}
+
+.close::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -12px;
+  width: 25px;
+  height: 5px;
+  background-color: #ee3643;
+  transform: rotate(-45deg);
+}
+
+
+.contact-wrapper {
+  width: 940px;
+  margin: 50px auto;
+}
+
+.contact-wrapper .popup {
+  display: block;
+  position: relative;
+  left: 20%;
+}

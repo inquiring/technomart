@@ -1,0 +1,53 @@
+.popular-mark {
+  margin-top: 20px;
+  /* .popular-mark__list */
+  &__list {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  /* .popular-mark__item */
+  &__item {
+    width: 218px;
+    margin-bottom: 17px;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    &:hover {
+      border: none;
+      box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+    }
+    &:active {
+      border: none;
+      box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+      & .popular-mark__item-link  {
+        opacity: 0.3;
+      }
+    }
+  }
+    /* .popular-mark__item-title */
+    &__item-title {
+    /* .popular-mark__item-title--hidden */
+        &--hidden {
+          /* прячем текст для читалок */
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          border: 0;
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+        }
+  }
+  /* .popular-mark__item-link */
+  &__item-link {
+    display: flex;
+    height: 143px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+  }
+}
