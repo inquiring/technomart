@@ -1,39 +1,23 @@
 .caption {
-  margin-top: 52px;
     display: flex;
+
+    box-sizing: border-box;
     width: 100%;
+    margin-top: 52px;
     padding: 0 24px 0 27px;
+
+    background: #f7f3ec;
+
     justify-content: space-between;
     align-items: center;
-    background: #f7f3ec;
-    box-sizing: border-box;
-  /* .caption__title */
-  &__title {
-    font-size: 30px;
+    /* .caption__title */
+    &__title {
+        font-size: 30px;
+        font-weight: 400;
         line-height: 30px;
-        font-weight: 400;
-        color: #32425c;
+
         text-transform: uppercase;
-  }
-  /* .caption__link */
-  &__link {
-    width: 253px;
-        padding: 10px 0;
-        font-size: 14px;
-        line-height: 18px;
-        font-weight: 400;
-        color: #ffffff;
-        text-align: center;
-        text-transform: uppercase;
-        border-radius: 3px;
-        background: #ee3643;
-        box-sizing: border-box;
-        cursor: pointer;
-        &:hover {
-            background: #ca2c37;
-        }
-        &:active {
-            background: #ba2732;
-        }
-  }
+
+        color: @blue;
+    }
 }

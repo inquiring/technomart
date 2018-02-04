@@ -1,73 +1,71 @@
 .about-us {
-  display: flex;
-  width: 520px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  &__title {
-    width: 100%;
-    margin-bottom: 23px;
-    font-size: 30px;
-    line-height: 120%;
-    font-weight: 400;
-    color: #000000;
-    text-transform: uppercase;
-  }
-  &__description,
-  &__delivery {
-    margin: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #000000;
-  }
-  &__delivery {
-    width: 385px;
-    margin-top: 25px;
-  }
-  &__delivery-list {
-    width: 100%;
-    margin-top: 20px;
-  }
-  &__delivery-item {
-    position: relative;
-    margin: 0;
-    margin-bottom: 20px;
-    padding-left: 36px;
-    font-family: "Cuprum", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #000000;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 40%;
-      left: 0;
-      width: 24px;
-      height: 2px;
-      background: #fb565a;
+    display: flex;
+
+    width: 520px;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    &__title {
+        width: 100%;
+        margin-bottom: 23px;
+
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 120%;
+
+        text-transform: uppercase;
+
+        color: #000;
     }
-  }
-  &__link {
-    display: inline-block;
-    width: 220px;
-    margin-top: 16px;
-    padding: 10px 0;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #ee3643;
-    border-radius: 3px;
-    box-sizing: border-box;
-    &:hover {
-      background: #ca2c37;
+    &__description ,
+    &__delivery {
+        margin: 0;
+
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+
+        color: #000;
     }
-    &:active {
-      background: #ba2732;
+    &__delivery {
+        width: 385px;
+        margin-top: 25px;
     }
-  }
+    &__delivery-list {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+
+        list-style: none;
+    }
+    &__delivery-item {
+        position: relative;
+
+        margin: 0;
+        margin-bottom: 20px;
+        padding-left: 36px;
+
+        font-family: "Cuprum", "Arial", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+
+        color: #000;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 40%;
+            left: 0;
+
+            width: 24px;
+            height: 2px;
+
+            background: @red;
+        }
+    }
+    &__btn{
+      margin-top: 16px;
+    }
 }

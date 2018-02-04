@@ -1,60 +1,61 @@
 .social {
-  display: flex;
+    display: flex;
 
-  margin-left: 42px;
+    margin-left: 42px;
 
-  text-align: center;
+    text-align: center;
 
-  justify-content: space-between;
-  align-items: center;
-}
+    justify-content: space-between;
+    align-items: center;
 
-.social__btn {
-  position: relative;
 
-  display: inline-block;
+    &__btn {
+        position: relative;
 
-  width: 42px;
-  height: 38px;
-  margin: 0 2px;
+        display: inline-block;
 
-  font-size: 0;
+        width: 42px;
+        height: 38px;
+        margin: 0 2px;
 
-  vertical-align: top;
-  text-decoration: none;
+        font-size: 0;
 
-  border-radius: 50%;
-  background-color: #212a3a;
+        vertical-align: top;
+        text-decoration: none;
 
-  &:hover {
-    background-color: #ee3643;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
+        border-radius: 50%;
+        background-color: #212a3a;
 
-    transform: translate(-50%, -50%);
+        &:hover {
+            background-color: @red;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
 
-    background: url("../img/sprite1.png") no-repeat;
-  }
-  &--vk::before {
-    width: 20px;
-    height: 12px;
+            transform: translate(-50%, -50%);
 
-    background-position: -10px -465px;
-  }
-  &--fb::before {
-    width: 10px;
-    height: 18px;
+            background: url("../img/sprite1.png") no-repeat;
+        }
+        &--vk::before {
+            width: 20px;
+            height: 12px;
 
-    background-position: -10px -170px;
-  }
-  &--inst::before {
-    width: 17px;
-    height: 17px;
+            background-position: -10px -465px;
+        }
+        &--fb::before {
+            width: 10px;
+            height: 18px;
 
-    background-position: -10px -240px;
-  }
+            background-position: -10px -170px;
+        }
+        &--inst::before {
+            width: 17px;
+            height: 17px;
+
+            background-position: -10px -240px;
+        }
+    }
 }

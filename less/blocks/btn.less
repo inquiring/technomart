@@ -1,0 +1,149 @@
+.btn {
+    display: block;
+
+    box-sizing: border-box;
+    padding: 10px 0;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: @red;
+    &:hover {
+        background: @red-hover;
+    }
+    &:active {
+        background: @red-active;
+    }
+    &--filter {
+        width: 140px;
+
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 13px;
+
+        color: #000;
+        border: 1px solid #e5e5e5;
+        border-radius: unset;
+        background: #fff;
+        &:hover ,
+        &:active {
+            color: #fff;
+            background-color: @red-hover;
+        }
+    }
+    &--sub-menu {
+        width: 135px;
+
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.1);
+
+        .link-reset();
+        &:hover {
+            background-color: #ccc;
+        }
+        &:active {
+            background-color: #b2b2b2;
+        }
+    }
+
+    &--slider {
+        width: 195px;
+
+        .link-reset();
+    }
+
+    &--caption {
+        width: 253px;
+
+        .link-reset();
+    }
+    &--price {
+        position: relative;
+
+        width: 135px;
+
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+
+        border: 1px solid @red;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            bottom: 5px;
+
+            width: 29px;
+            height: 28px;
+
+            transform: rotate(45deg);
+
+            background: @red;
+            &:hover {
+                background: @red-hover;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            right: -9px;
+            bottom: -1px;
+
+            width: 23px;
+            height: 41px;
+
+            background: #fff;
+        }
+    }
+    &--about-us {
+        width: 220px;
+    }
+    &--login-enter,
+    &--registration,
+    &--login-name {
+
+        text-transform: none;
+        font-size: 21px;
+        line-height: 21px;
+        font-family: "Cuprum", "Arial", sans-serif;
+
+        color: #000;
+        background: #fff;
+        &:hover {
+            color: @red;
+            background: #fff;
+            & .icon {
+                opacity: 1;
+            }
+        }
+        &:active {
+            color: #c5c5c5;
+            & .icon {
+                opacity: 0.1;
+            }
+        }
+    }
+    &--login-enter {
+        width: 120px;
+    }
+    &--registration {
+        width: 150px;
+
+    }
+    &--login-name{
+        width: 300px;
+    }
+}
