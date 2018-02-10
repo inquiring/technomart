@@ -1,15 +1,19 @@
 .navigation {
+    display: flex;
     width: 100%;
 
     &--main {
+
         height: 57px;
         margin-top: 26px;
 
         background-color: @blue;
         box-shadow: 0 3px 0 0 @main-color;
+
+        justify-content: space-between;
     }
     &--footer-top {
-        display: flex;
+
 
         width: 555px;
 
@@ -17,50 +21,48 @@
         align-items: flex-end;
     }
     &--submenu {
-        display: flex;
+
 
         width: 525px;
 
         justify-content: space-between;
     }
-    /* .navigation__list */
-    &__list {
-        display: flex;
+    // /* .navigation__list */
+    // &__list {
+    //     display: flex;
 
-        .list-reset();
-        &--main {
-            justify-content: space-around;
-        }
-        &--footer-top {
+    //     .list-reset();
+    //     &--main {
+    //         justify-content: space-around;
+    //     }
+    //     &--footer-top {
+    //         justify-content: flex-end;
+    //     }
+    //     &--submenu {
+    //         justify-content: flex-end;
+    //     }
+    // }
+    // /* .navigation__item */
+    // &__item {
+    //     display: flex;
+    //     &--main {
+    //         display: flex;
+    //     }
 
-            justify-content: flex-end;
-        }
-        &--submenu {
+    //     &--footer-top {
+    //         margin-right: 60px;
+    //         &:last-child {
+    //             margin-right: 0;
+    //         }
+    //     }
+    //     &--submenu {
+    //         margin-right: 60px;
 
-            justify-content: flex-end;
-        }
-    }
-    /* .navigation__item */
-    &__item {
-        display: flex;
-        &--main {
-            display: flex;
-        }
-
-        &--footer-top {
-            margin-right: 60px;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-        &--submenu {
-            margin-right: 60px;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
+    //         &:last-child {
+    //             margin-right: 0;
+    //         }
+    //     }
+    // }
     /* .navigation__link */
     &__link {
         &--main {
@@ -78,7 +80,7 @@
             }
             &:active {
                 color: #8e939c;
-                background:@main-color-active;
+                background: @main-color-active;
             }
         }
 
