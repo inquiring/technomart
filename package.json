@@ -5,7 +5,7 @@
   "description": "Тестовое задание от ...",
   "devDependencies": {
     "sshpk": ">=1.13.2",
-    "merge": ">=1.2.1",
+    "merge": ">=2.1.1",
     "deep-extend": ">=0.5.1",
     "@htmlacademy/editorconfig-cli": "1.0.x",
     "autoprefixer": "9.7.0",
