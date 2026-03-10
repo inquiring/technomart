@@ -1,0 +1,109 @@
+.filter {
+    width: 220px;
+    /* .filter__title */
+    &__title {
+        margin: 0;
+        padding: 15px 0 15px 20px;
+
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+
+        text-transform: uppercase;
+
+        background: #f7f3ec;
+    }
+    /* .filter__block */
+    &__block {
+        border-bottom: 1px solid #e5e5e5;
+        &--type {
+            border: none;
+        }
+    }
+    /* .filter__subtitle */
+    &__subtitle {
+        margin: 22px 0;
+
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 30px;
+
+        text-transform: uppercase;
+    }
+    /* .filter__list */
+    &__list {
+        margin-bottom: 20px;
+
+        .list-reset();
+    }
+    /* .filter__item */
+    &__item {
+        position: relative;
+
+        display: block;
+
+        margin-bottom: 20px;
+
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+
+        cursor: pointer;
+        text-transform: uppercase;
+
+        color: #000;
+    }
+
+    &__checkbox ,
+    &__radio {
+        display: none;
+    }
+
+    &__checkbox-custom ,
+    &__radio-custom {
+        position: relative;
+
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+    &__checkbox-custom {
+        background: transparent url(../img/icon-check-off.png) no-repeat;
+    }
+    &__radio-custom {
+        background: transparent url(../img/icon-circle.png) no-repeat;
+    }
+    &__checkbox-custom ,
+    &__radio-custom {
+        display: inline-block;
+
+        vertical-align: middle;
+    }
+    &__checkbox:checked + &__checkbox-custom::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        background: transparent url(../img/icon-check-on.png) no-repeat;
+    }
+    &__radio:checked + &__radio-custom::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        background: transparent url(../img/icon-circle-dot.png) no-repeat;
+    }
+}

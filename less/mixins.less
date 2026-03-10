@@ -1,0 +1,65 @@
+.visually-hidden {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip-path: inset(100%);
+}
+
+.list-reset() {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.link-reset() {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+// от 320 мобильная версия
+.container() {
+    width: 320px;
+    margin: 0 auto;
+    // от 660 планшетная версия (ширина макета 700)
+    @media @tablet-width {
+        width: 660px;
+    }
+    // от 960 десктопная версия
+    @media @desktop-width {
+        width: 960px;
+    }
+}
+
+.no-outline() {
+    outline: none;
+    background: transparent;
+    &::before {
+        display: none;
+    }
+}
+
+.container-fluid () {
+    width: auto;
+    @media @tablet-width {
+        width: 84%;
+        /* 640px / 768px ~= 84% */
+        max-width: 960px;
+        /* 960px / .84 ~= 1142px (центровка начнётся чуть раньше 1200px) */
+        margin: 0 auto;
+    }
+}

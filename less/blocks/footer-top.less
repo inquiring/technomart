@@ -1,0 +1,29 @@
+.footer-top {
+    background: @blue;
+    &__menu,
+    &__submenu {
+        display: flex;
+
+        width: 100%;
+
+        justify-content: space-between;
+    }
+    &__submenu {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    &__address {
+        width: 322px;
+        margin: 0;
+
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+
+        color: #fff;
+        .link-reset();
+    }
+
+}

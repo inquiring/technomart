@@ -1,0 +1,11 @@
+.DS_Store
+.BIN
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+Thumbs.db
+build/

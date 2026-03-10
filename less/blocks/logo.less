@@ -1,0 +1,32 @@
+.logo {
+  margin: 0;
+}
+
+.logo__title {
+  display: block;
+  width: 220px;
+  padding: 0.563rem 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background: @red;
+  box-shadow: 0 5px 0 0 #b52933;
+  &:hover {
+    background: @red-hover;
+    box-shadow: 0 5px 0 0 #9a212a;
+  }
+  &:active {
+    background: @red-active;
+    box-shadow: 0 5px 0 0 #8e1e26;
+  }
+  &--footer {
+    height: 63px;
+    font-size: 30px;
+    line-height: 120%;
+    padding: 15px 0;
+    box-sizing: border-box;
+  }
+}

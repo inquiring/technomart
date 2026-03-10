@@ -1,0 +1,113 @@
+
+.icon {
+    position: relative;
+
+    opacity: 0.3;
+    /* .icon--bookmark */
+    &--bookmark::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: -22px;
+
+        width: 18px;
+        height: 18px;
+
+        background: transparent url(../img/icon-bookmark.png) no-repeat;
+    }
+    /* .icon--basket */
+    &--basket::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: -22px;
+
+        width: 18px;
+        height: 18px;
+
+        background: transparent url(../img/icon-basket.png) no-repeat;
+    }
+    /* .icon--login */
+    &--login::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -30px;
+
+        width: 22px;
+        height: 18px;
+
+        background: transparent url(../img/icon-login.png) no-repeat;
+    }
+    /* .icon--user */
+    &--user::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -40px;
+
+        width: 22px;
+        height: 18px;
+
+        background: transparent url(../img/icon-user.png) no-repeat;
+    }
+    /* .icon--logout */
+    &--logout::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        right: -40px;
+
+        width: 22px;
+        height: 18px;
+
+        background: transparent url(../img/icon-logout.png) no-repeat;
+    }
+    /* .icon--phone */
+    &--phone::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -40px;
+
+        width: 22px;
+        height: 18px;
+
+        background: transparent url(../img/icon-phone.png) no-repeat;
+    }
+    /* .icon--up */
+    &--up::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+
+        width: 0;
+        height: 0;
+        padding: 0;
+
+        border-right: 5px solid transparent;
+        border-bottom: 10px solid #c6c2bd;
+        border-left: 5px solid transparent;
+        &--active {
+            color: @red-active;
+        }
+    }
+    /* .icon--down */
+    &--down::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: 20px;
+
+        width: 0;
+        height: 0;
+        padding: 0;
+
+        border-top: 10px solid #c6c2bd;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        &--active {
+            color: @red-active;
+        }
+    }
+}

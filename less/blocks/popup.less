@@ -1,0 +1,179 @@
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 19;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    &--show {
+        display: block;
+    }
+}
+
+.popup {
+    position: fixed;
+    z-index: 20;
+    top: 40%;
+    left: 30%;
+
+    display: none;
+
+    box-sizing: border-box;
+    width: 620px;
+    margin-top: -24px;
+    margin-left: -34px;
+    padding: 46px 37px 37px;
+
+    border-top: 7px solid @red;
+    border-bottom: 88px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.7);
+
+    justify-content: center;
+}
+
+.popup--open {
+    display: flex;
+}
+
+.popup-form {
+    display: flex;
+
+    width: 460px;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.half-width {
+    display: flex;
+
+    width: 47%;
+    margin-bottom: 23px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.half-width:first-of-type {
+    margin-right: 23px;
+}
+
+.popup-form label {
+    font-size: 18px;
+    font-weight: 700;
+
+    color: #000;
+}
+
+.half-width input ,
+.popup-form textarea {
+    width: 220px;
+    margin-top: 13px;
+    padding: 13px 15px;
+
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+
+    border: 2px solid #d7dcde;
+    /* outline: none; */
+}
+
+.popup-form textarea {
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    bottom: -62px;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 460px;
+    padding: 10px 10px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: @red;
+}
+
+.button:hover {
+    background: @red-hover;
+}
+
+.button:active {
+    background: @red-active;
+}
+
+.close {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+
+    font-size: 0;
+
+    cursor: pointer;
+
+    border: 0;
+    background: transparent;
+    outline: 0;
+}
+
+.close::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -12px;
+
+    width: 25px;
+    height: 5px;
+
+    transform: rotate(45deg);
+
+    background-color: @red;
+}
+
+.close::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -12px;
+
+    width: 25px;
+    height: 5px;
+
+    transform: rotate(-45deg);
+
+    background-color: @red;
+}
+
+
+.contact-wrapper {
+    width: 940px;
+    margin: 50px auto;
+}
+
+.contact-wrapper .popup {
+    position: relative;
+    left: 20%;
+
+    display: block;
+}
+
+.modal-open {
+    overflow: hidden;
+}

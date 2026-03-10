@@ -1,0 +1,81 @@
+.actions {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    &__buy ,
+    &__bookmark {
+        display: block;
+
+        width: 129px;
+        margin: 0 auto;
+        margin-bottom: 7px;
+        padding: 7px 0;
+
+        font-family: "Cuprum", "Arial", sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 18px;
+
+        text-decoration: none;
+        text-transform: uppercase;
+
+        color: white;
+        border: 3px solid @green;
+        border-bottom-color: @green-active;
+        border-radius: 3px;
+        background-color: @green;
+    }
+
+    &__buy {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: 10px;
+
+            width: 18px;
+            height: 18px;
+
+            opacity: 0.3;
+            background: transparent url(../img/icon-basket.png) no-repeat;
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+
+    &__bookmark {
+        position: relative;
+
+        color: #32425c;
+        border-bottom-color: @green;
+        background: white;
+        &:hover {
+            border: 3px solid @blue;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 7px;
+
+            width: 18px;
+            height: 18px;
+
+            background: transparent url(../img/icon-bookmark_.png) no-repeat;
+        }
+        &:hover::before {
+            background: transparent url(../img/icon-bookmark.png) no-repeat;
+        }
+    }
+}

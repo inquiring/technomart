@@ -1,0 +1,71 @@
+.about-us {
+    display: flex;
+
+    width: 520px;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    &__title {
+        width: 100%;
+        margin: 0 0 23px;
+
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 120%;
+
+        text-transform: uppercase;
+
+        color: #000;
+    }
+    &__description ,
+    &__delivery {
+        margin: 0;
+
+        font-family: "PT Sans", "Arial", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+
+        color: #000;
+    }
+    &__delivery {
+        width: 385px;
+        margin-top: 25px;
+    }
+    &__delivery-list {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+
+        list-style: none;
+    }
+    &__delivery-item {
+        position: relative;
+
+        margin: 0;
+        margin-bottom: 20px;
+        padding-left: 36px;
+
+        font-family: "Cuprum", "Arial", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+
+        color: #000;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 40%;
+            left: 0;
+
+            width: 24px;
+            height: 2px;
+
+            background: @red;
+        }
+    }
+    &__btn{
+      margin-top: 16px;
+    }
+}
